@@ -32,8 +32,8 @@
 #include "diag/Trace.h"
 
 #include <Globals.hpp>
-#include <MemBlocks.hpp>
-#include <Heap.hpp>
+#include <Generic.hpp>
+#include <Wire.hpp>
 #include <SinGenerator.hpp>
 
 // ----------------------------------------------------------------------------
@@ -59,28 +59,14 @@
 int
 main(int argc, char* argv[])
 {
-  // At this stage the system clock should have already been configured
-  // at high speed.
+	// At this stage the system clock should have already been configured
+	// at high speed.
+	Generic::initializeModules();
 
-	MemBlocks buffers;
-	Heap heap;
-
-	uint32_t_ptr pointer = nullptr;
-	uint32_t_ptr pointer2 = nullptr;
-	heap.reserveHeapCells(pointer, 4);
-	heap.releaseHeapCells(pointer + 1, 2);
-	heap.reserveHeapCells(pointer2, 3);
-
-
-	//SinGenerator sinus (32, 5, buffers, heap);
-
-
-
-  // Infinite loop
-  while (1)
-    {
-       // Add your code here.
-    }
+	// Infinite loop
+	while (1) {
+		// Add your code here.
+	}
 }
 
 #pragma GCC diagnostic pop

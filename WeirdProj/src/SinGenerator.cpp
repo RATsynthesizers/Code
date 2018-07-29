@@ -12,25 +12,25 @@ SinGenerator::SinGenerator(const uint32_t& smpInPeriod, const uint32_t& amp,
 		samplesInPeriod(smpInPeriod), amplification(amp), blocksQueue(nullptr),
 		numberOfCellsInLastBlock(0), memBlocks(memManag), heap(hp) {};
 
-inline uint32_t SinGenerator::getSamplesInPeriod() {
+uint32_t SinGenerator::getSamplesInPeriod() {
 	return samplesInPeriod;
 };
 
-inline SinGenerator::Error SinGenerator::setSamplesInPeriod(const uint32_t& smpInPeriod) {
+SinGenerator::Error SinGenerator::setSamplesInPeriod(const uint32_t& smpInPeriod) {
 	samplesInPeriod = smpInPeriod;
 	return Error::NO_ERROR;
 };
 
-inline uint32_t SinGenerator::getAmplification() {
+uint32_t SinGenerator::getAmplification() {
 	return amplification;
 };
 
-inline SinGenerator::Error SinGenerator::setAmplification(const uint32_t& amp) {
+SinGenerator::Error SinGenerator::setAmplification(const uint32_t& amp) {
 	amplification = amp;
 	return Error::NO_ERROR;
 };
 
-inline SinGenerator::Error SinGenerator::getNumberOfCellsInLastBlock(uint32_t& NumberOfCells) {
+SinGenerator::Error SinGenerator::getNumberOfCellsInLastBlock(uint32_t& NumberOfCells) {
 	NumberOfCells = numberOfCellsInLastBlock;
 	return Error::NO_ERROR;
 };
@@ -109,6 +109,6 @@ SinGenerator::Error SinGenerator::generate() {
 	return Error::NO_ERROR;
 };
 
-inline void SinGenerator::sin(const uint32_t& position, const uint32_t_ptr bufferPointer) {
+void SinGenerator::sin(const uint32_t& position, const uint32_t_ptr bufferPointer) {
 	//float arg = position * (2 * PI / samplesInPeriod);
 };
