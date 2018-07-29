@@ -22,17 +22,17 @@ public:
 
 	SinGenerator(const uint32_t& smpInPeriod, const uint32_t& amp, const MemBlocks& memManag, Heap& hp);
 
-	inline uint32_t getSamplesInPeriod();
-	inline Error setSamplesInPeriod(const uint32_t& smpInPeriod);
+	uint32_t getSamplesInPeriod();
+	Error setSamplesInPeriod(const uint32_t& smpInPeriod);
 
-	inline uint32_t getAmplification();
-	inline Error setAmplification(const uint32_t& amp);
+	uint32_t getAmplification();
+	Error setAmplification(const uint32_t& amp);
 
 	Error generate();
 	Error getCurrentBlockAddress(uint32_t_ptr& currentBlockAddress);
 	Error releaseCurrentBlock();
 
-	inline Error getNumberOfCellsInLastBlock(uint32_t& NumberOfCells);
+	Error getNumberOfCellsInLastBlock(uint32_t& NumberOfCells);
 private:
 	SinGenerator();
 	SinGenerator(const SinGenerator& in);
@@ -52,7 +52,7 @@ private:
 	const MemBlocks& memBlocks;
 	Heap& heap;
 
-	inline void sin(const uint32_t& position, const uint32_t_ptr bufferPointer);
+	void sin(const uint32_t& position, const uint32_t_ptr bufferPointer);
 };
 
 #endif /* SINGENERATOR_HPP_ */

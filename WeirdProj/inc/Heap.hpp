@@ -21,7 +21,6 @@ public:
 	Heap();
 
 	//Use these methods carefully
-	//rvalue???
 	//pointerToReservedCells is output parameter, sizeInCells is input parameter
 	Error reserveHeapCells(uint32_t_ptr& pointerToReservedCells, const uint32_t& sizeInCells);
 	Error releaseAllHeapCells();

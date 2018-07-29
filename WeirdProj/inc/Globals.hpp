@@ -10,10 +10,12 @@
 
 #include "stm32f4xx.h"
 typedef uint32_t* uint32_t_ptr;
+typedef const uint32_t* const_uint32_t_ptr;
 
 enum GlobalParameters {
 	DIGITS = 32, //For 32-bit processor
-	BYTES = 4
+	BYTES = 4,
+	SAMPLES_IN_BLOCK = 32
 };
 
 #endif /* GLOBALS_HPP_ */

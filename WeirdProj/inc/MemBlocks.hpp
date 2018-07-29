@@ -42,6 +42,4 @@ private:
 	uint32_t memBitMap[(static_cast<uint32_t>(MemBlocksParam::MEM_BLOCK_COUNT) - 1) / ::DIGITS + 1];
 };
 
-
-
 #endif /* MEMBLOCKS_HPP_ */
