@@ -7,24 +7,24 @@
 #include <Module.hpp>
 
 Module::Module()
-	: inputBufferPointer(nullptr), moduleType(typeid(this)) {
-	for(uint32_t i = 0; i < ::SAMPLES_IN_BLOCK;
-			outputBuffer[i] = 0, i++);
+	: /*inputBufferPointer(nullptr)*/, moduleType(typeid(this)) {  //@rat: see hpp
+	for(u32 i = 0; i < ::SAMPLES_IN_BLOCK;
+			oB[i] = 0, i++);
 
 	//instance++;
 };
 
-const_uint32_t_ptr Module::getOutputBufferPointer() const {
-	return outputBuffer;
+c_u32ptr Module::getOutputBufferPointer() const {
+	return oB;
 };
 
-uint32_t_ptr Module::getInputBufferPointer() {
-	return inputBufferPointer;
-};
+// uint32_t_ptr Module::getInputBufferPointer() {                 //@rat: see hpp
+// 	return inputBufferPointer;
+// };
 
-void Module::setInputBufferPointer(const_uint32_t_ptr pointer) {
-	inputBufferPointer = const_cast<uint32_t_ptr>(pointer);
-};
+// void Module::setInputBufferPointer(c_u32ptr pointer) {         //@rat: see hpp
+// 	inputBufferPointer = const_cast<uint32_t_ptr>(pointer);
+// };
 
 /*inline bool Module::isConnected() {
 	return inputBufferPointer;

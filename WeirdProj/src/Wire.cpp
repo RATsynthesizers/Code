@@ -7,12 +7,12 @@
 
 #include <Wire.hpp>
 
-Wire::Wire(const Module& providerParam, Module& consumerParam)
-	: consumer(consumerParam) {
-	consumer.setInputBufferPointer(
-			providerParam.getOutputBufferPointer());
+Wire::Wire(const Module& src, Module& dst)
+	: dstModule(dst) {
+	dstModule.setInputBufferPointer(
+			src.getOutputBufferPointer());
 };
 
 Wire::~Wire() {
-	consumer.setInputBufferPointer(nullptr);
+	dstModule.setInputBufferPointer(nullptr);
 };
