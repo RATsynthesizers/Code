@@ -9,10 +9,13 @@
 
 Wire::Wire(const Module& providerParam, Module& consumerParam)
 	: consumer(consumerParam) {
-	consumer.setInputBufferPointer(
-			providerParam.getOutputBufferPointer());
+	bufferNumber = consumer.getNumberOfNextFreeInputBuffer();
+	if (bufferNumber < ::LINKS) {
+		consumer.setInputBufferPointer(bufferNumber,
+				providerParam.getOutputBufferPointer());
+	};
 };
 
 Wire::~Wire() {
-	consumer.setInputBufferPointer(nullptr);
+	consumer.setInputBufferPointer(bufferNumber, nullptr);
 };

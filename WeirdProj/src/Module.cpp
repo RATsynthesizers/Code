@@ -7,9 +7,12 @@
 #include <Module.hpp>
 
 Module::Module()
-	: inputBufferPointer(nullptr), moduleType(typeid(this)) {
+	: moduleType(typeid(this)) {
 	for(uint32_t i = 0; i < ::SAMPLES_IN_BLOCK;
 			outputBuffer[i] = 0, i++);
+
+	for(uint32_t i = 0; i < ::LINKS;
+			inputBufferPointer[i] = nullptr, i++);
 
 	//instance++;
 };
@@ -18,17 +21,22 @@ const_uint32_t_ptr Module::getOutputBufferPointer() const {
 	return outputBuffer;
 };
 
-uint32_t_ptr Module::getInputBufferPointer() {
-	return inputBufferPointer;
+uint32_t Module::getNumberOfNextFreeInputBuffer() {
+	for (uint32_t i = 0; i < ::LINKS; i++) {
+		if (!inputBufferPointer[i])
+			return i;
+	};
+	return ::LINKS;
 };
 
-void Module::setInputBufferPointer(const_uint32_t_ptr pointer) {
-	inputBufferPointer = const_cast<uint32_t_ptr>(pointer);
-};
+Module::Error Module::setInputBufferPointer(uint32_t bufferNumber,
+		const_uint32_t_ptr pointer) {
+	if (bufferNumber >= ::LINKS)
+		return Error::INVALID_BUFFER_NUMBER;
 
-/*inline bool Module::isConnected() {
-	return inputBufferPointer;
-};*/
+	inputBufferPointer[bufferNumber] = pointer;
+	return Error::NO_ERROR;
+};
 
 const std::type_info& Module::getModuleType() const {
 	return moduleType;
