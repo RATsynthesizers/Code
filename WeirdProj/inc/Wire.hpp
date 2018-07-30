@@ -19,6 +19,7 @@ private:
 	Wire(const Wire& in);
 
 	Module& consumer;
+	uint32_t bufferNumber;
 };
 
 #endif /* WIRE_HPP_ */
