@@ -4,8 +4,6 @@ typedef uint8_t  u8;            // аналогично для uint16_t и uint3
 typedef uint8_t* u8ptr;         // аналогично для uint16_t и uint32_t  
 typedef const uint8_t* c_u8ptr; // аналогично для uint16_t и uint32_t  
 
-
-
 module    - вычислительное устройство, содержит:
 iP_<>     - входной параметр модуля, переменная
 iBptr_<>  - указатель на входной буфер параметра модуля
