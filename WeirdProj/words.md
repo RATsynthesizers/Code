@@ -1,6 +1,6 @@
 <> - любое слово. Например, имя iP_<> может быть реализовано как iP_frq  
 сокращения типов:
-typedef uint8_t  u8;            // аналогично для uint16_t и uint32_t
+typedef uint8_t  u8;            // аналогично для uint16_t и uint32_t  
 typedef uint8_t* u8ptr;         // аналогично для uint16_t и uint32_t  
 typedef const uint8_t* c_u8ptr; // аналогично для uint16_t и uint32_t  
 
