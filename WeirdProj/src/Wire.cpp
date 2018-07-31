@@ -17,6 +17,8 @@ Wire::Wire(const Module& providerParam, Module& consumerParam)
 };
 
 void Wire::unplug() {
-	consumer.setInputBufferPointer(bufferNumber, nullptr);
+	if (bufferNumber < ::LINKS) {
+		consumer.setInputBufferPointer(bufferNumber, nullptr);
+	};
 	delete this;
 };
