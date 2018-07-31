@@ -1,5 +1,5 @@
 <Lcase/Hcase> - любое слово, начинающееся с буквы соответсвующего регистра.
-Например, имя iP<Lcase> может быть реализовано как iPfrq, а iP<Hcase> как iBptrFrq.
+Например, имя iP<Lcase> может быть реализовано как iPfrq, а iPptr<Hcase> как iBptrFrq.
 
 сокращения типов:
 typedef uint8_t  u8;            // аналогично для uint16_t и uint32_t
