@@ -12,8 +12,6 @@ Module::Module() {
 
 	for(uint32_t i = 0; i < ::LINKS;
 			inputBufferPointer[i] = nullptr, i++);
-
-	//instance++;
 };
 
 const_uint32_t_ptr Module::getOutputBufferPointer() const {
@@ -40,7 +38,3 @@ Module::Error Module::setInputBufferPointer(uint32_t bufferNumber,
 const Module::ModuleType Module::getModuleType() const {
 	return moduleType;
 };
-
-/*inline void Module::initializeInstance() {
-	instance = 0;
-};*/
