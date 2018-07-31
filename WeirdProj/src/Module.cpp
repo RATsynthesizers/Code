@@ -6,8 +6,7 @@
  */
 #include <Module.hpp>
 
-Module::Module()
-	: moduleType(typeid(this)) {
+Module::Module() {
 	for(uint32_t i = 0; i < ::SAMPLES_IN_BLOCK;
 			outputBuffer[i] = 0, i++);
 
@@ -21,7 +20,7 @@ const_uint32_t_ptr Module::getOutputBufferPointer() const {
 	return outputBuffer;
 };
 
-uint32_t Module::getNumberOfNextFreeInputBuffer() {
+uint32_t Module::getNumberOfNextFreeInputBuffer() const {
 	for (uint32_t i = 0; i < ::LINKS; i++) {
 		if (!inputBufferPointer[i])
 			return i;
@@ -38,7 +37,7 @@ Module::Error Module::setInputBufferPointer(uint32_t bufferNumber,
 	return Error::NO_ERROR;
 };
 
-const std::type_info& Module::getModuleType() const {
+const Module::ModuleType Module::getModuleType() const {
 	return moduleType;
 };
 
