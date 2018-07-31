@@ -25,18 +25,18 @@ public:
 	Module();
 	virtual ~Module();
 
-	const_uint32_t_ptr getOutputBufferPointer() const;
+	c_u32ptr getOutputBufferPointer() const;
 
 	//Returns ::LINKS if all input buffers were reserved
-	uint32_t getNumberOfNextFreeInputBuffer() const;
-	Error setInputBufferPointer(uint32_t bufferNumber, const_uint32_t_ptr pointer);
+	u32 getNumberOfNextFreeInputBuffer() const;//                     @rat: all parameters are module-specific
+	Error setInputBufferPointer(u32 bufferNumber, c_u32ptr pointer);//and all get/set funcs for these parameters are module-specific too
 
 	const ModuleType getModuleType() const;
 
 	virtual void update() = 0;
 protected:
-	const_uint32_t_ptr inputBufferPointer[::LINKS];
-	uint32_t outputBuffer[::SAMPLES_IN_BLOCK];
+	c_u32ptr iBptr_parameter[::LINKS]; //@rat:  parameters will have different names, so will buffer pointers
+	u32 oB[::SAMPLES_IN_BLOCK];//       (parameters and input buffer pointers are module-specific)
 	ModuleType moduleType = ModuleType::NOT_INITIALIZED;
 };
 
