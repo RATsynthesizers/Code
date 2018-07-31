@@ -12,13 +12,14 @@
 
 class Wire {
 public:
-	Wire(const Module& providerParam, Module& consumerParam);
+	Wire(const Module& src, Module& dst);
 	~Wire();
 private:
 	Wire();
 	Wire(const Wire& in);
 
-	Module& consumer;
+	Module& dstModule;
+	u32 bufferNumber;
 };
 
 #endif /* WIRE_HPP_ */

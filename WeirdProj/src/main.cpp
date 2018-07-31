@@ -34,7 +34,7 @@
 #include <Globals.hpp>
 #include <Generic.hpp>
 #include <Wire.hpp>
-#include <SinGenerator.hpp>
+#include <Generator.hpp>
 
 // ----------------------------------------------------------------------------
 //

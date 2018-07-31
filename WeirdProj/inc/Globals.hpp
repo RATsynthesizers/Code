@@ -9,13 +9,15 @@
 #define GLOBALS_HPP_
 
 #include "stm32f4xx.h"
-typedef uint32_t* uint32_t_ptr;
-typedef const uint32_t* const_uint32_t_ptr;
+typedef uint32_t  u32;
+typedef uint32_t* u32ptr;
+typedef const uint32_t* c_u32ptr;
 
 enum GlobalParameters {
 	DIGITS = 32, //For 32-bit processor
 	BYTES = 4,
-	SAMPLES_IN_BLOCK = 32
+	SAMPLES_IN_BLOCK = 32,
+	LINKS = 16
 };
 
 #endif /* GLOBALS_HPP_ */

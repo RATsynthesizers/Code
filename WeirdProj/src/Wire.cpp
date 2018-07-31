@@ -7,12 +7,15 @@
 
 #include <Wire.hpp>
 
-Wire::Wire(const Module& providerParam, Module& consumerParam)
-	: consumer(consumerParam) {
-	consumer.setInputBufferPointer(
-			providerParam.getOutputBufferPointer());
+Wire::Wire(const Module& src, Module& dst)
+	: dstModule(dst) {
+	bufferNumber = dstModule.getNumberOfNextFreeInputBuffer();
+	if (bufferNumber < ::LINKS) {
+		dstModule.setInputBufferPointer(bufferNumber,
+				src.getOutputBufferPointer());
+	};
 };
 
 Wire::~Wire() {
-	consumer.setInputBufferPointer(nullptr);
+	dstModule.setInputBufferPointer(bufferNumber, nullptr);
 };
