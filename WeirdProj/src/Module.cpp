@@ -6,35 +6,35 @@
  */
 #include <Module.hpp>
 
-Module::Module() {                        //@rat: see hpp
-	for(u32 i = 0; i < ::SAMPLES_IN_BLOCK;
-			oB[i] = 0, i++);
+Module::Module() {
+	for(uint32_t i = 0; i < ::SAMPLES_IN_BLOCK;
+			outputBuffer[i] = 0, i++);
 
 	for(uint32_t i = 0; i < ::LINKS;
-			iBptr_parameter[i] = nullptr, i++);
+			inputBufferPointer[i] = nullptr, i++);
 };
 
-c_u32ptr Module::getOutputBufferPointer() const {
-	return oB;
+const_uint32_t_ptr Module::getOutputBufferPointer() const {
+	return outputBuffer;
 };
 
-u32 Module::getNumberOfNextFreeInputBuffer() const {              //@rat: see hpp
-	for (u32 i = 0; i < ::LINKS; i++) {
-		if (!iBptr_parameter[i])
+uint32_t Module::getNumberOfNextFreeInputBuffer() const {
+	for (uint32_t i = 0; i < ::LINKS; i++) {
+		if (!inputBufferPointer[i])
 			return i;
 	};
 	return ::LINKS;
 };
 
-Module::Error Module::setInputBufferPointer(u32 bufferNumber,     //@rat: see hpp
-		c_u32ptr pointer) {
+Module::Error Module::setInputBufferPointer(const uint32_t& bufferNumber,
+		const_uint32_t_ptr pointer) {
 	if (bufferNumber >= ::LINKS)
 		return Error::INVALID_BUFFER_NUMBER;
 
-	iBptr_parameter[bufferNumber] = pointer;
+	inputBufferPointer[bufferNumber] = pointer;
 	return Error::NO_ERROR;
 };
 
-const Module::ModuleType Module::getModuleType() const {
+Module::ModuleType Module::getModuleType() const {
 	return moduleType;
 };
