@@ -8,6 +8,8 @@
 #ifndef GENERIC_HPP_
 #define GENERIC_HPP_
 
+#include <Generator.hpp>
+
 class Generic {
 public:
 	static void initializeModules();
