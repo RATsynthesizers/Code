@@ -7,6 +7,7 @@
 
 #include <Generic.hpp>
 
-void Generic::initializeModules() {
 
+void Generic::initializeModules() {
+	//Generator::initializeInstance();
 };

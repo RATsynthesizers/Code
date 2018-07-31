@@ -14,29 +14,30 @@
 
 class Module {
 public:
+	enum class Error {
+		NO_ERROR = 0, INVALID_BUFFER_NUMBER = 1
+	};
+
+	enum class ModuleType {
+		NOT_INITIALIZED = 0, GENERATOR = 1
+	};
+
 	Module();
 	virtual ~Module();
 
 	c_u32ptr getOutputBufferPointer() const;
 
-	//Returns nullptr if module was not connected to another one
+	//Returns ::LINKS if all input buffers were reserved
+	u32 getNumberOfNextFreeInputBuffer() const;//                     @rat: all parameters are module-specific
+	Error setInputBufferPointer(u32 bufferNumber, c_u32ptr pointer);//and all get/set funcs for these parameters are module-specific too
 
-	//u32ptr getInputBufferPointer();                //@rat: all parameters are module-specific
-	//void setInputBufferPointer(c_u32ptr pointer);  //      and all get/set funcs for these parameters are module-specific too
-	//inline bool isConnected();
-
-	const std::type_info& getModuleType() const;
+	const ModuleType getModuleType() const;
 
 	virtual void update() = 0;
-
-	//inline static void initializeInstance();
-private:
-	//u32ptr iBptr_parameter;                        //@rat:  parameters will have different names, so will buffer pointers
-	                                                 //       (parameters and input buffer pointers are module-specific)
-	uint32_t oB[::SAMPLES_IN_BLOCK];
-	const std::type_info& moduleType;//Is it really necessary to keep this field?
-
-	//static uint32_t instance;
+protected:
+	c_u32ptr iBptr_parameter[::LINKS]; //@rat:  parameters will have different names, so will buffer pointers
+	u32 oB[::SAMPLES_IN_BLOCK];//       (parameters and input buffer pointers are module-specific)
+	ModuleType moduleType = ModuleType::NOT_INITIALIZED;
 };
 
 #endif /* MODULE_HPP_ */

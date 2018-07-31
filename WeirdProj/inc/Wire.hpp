@@ -19,6 +19,7 @@ private:
 	Wire(const Wire& in);
 
 	Module& dstModule;
+	u32 bufferNumber;
 };
 
 #endif /* WIRE_HPP_ */

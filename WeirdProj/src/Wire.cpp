@@ -9,10 +9,13 @@
 
 Wire::Wire(const Module& src, Module& dst)
 	: dstModule(dst) {
-	dstModule.setInputBufferPointer(
-			src.getOutputBufferPointer());
+	bufferNumber = dstModule.getNumberOfNextFreeInputBuffer();
+	if (bufferNumber < ::LINKS) {
+		dstModule.setInputBufferPointer(bufferNumber,
+				src.getOutputBufferPointer());
+	};
 };
 
 Wire::~Wire() {
-	dstModule.setInputBufferPointer(nullptr);
+	dstModule.setInputBufferPointer(bufferNumber, nullptr);
 };
