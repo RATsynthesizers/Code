@@ -13,7 +13,18 @@
 
 class Generator : public Module {
 public:
-	Generator(uint32_t amp, uint32_t freq);
+	Generator(const uint32_t& amp, const uint32_t& freq, const uint32_t& offst);
+
+	uint32_t getAmplification() const;
+	void setAmplification(const uint32_t& amp);
+
+	uint32_t getFrequency() const;
+	void setFrequency(uint32_t freq);
+
+	uint32_t getOffset() const;
+	void setOffset(const uint32_t& offst);
+
+	static uint32_t getInstance();
 private:
 	Generator();
 	Generator(const Generator& in);
@@ -22,6 +33,8 @@ private:
 
 	uint32_t amplification;
 	uint32_t frequency;
+
+	uint32_t offset;
 };
 
 #endif /* GENERATOR_HPP_ */
