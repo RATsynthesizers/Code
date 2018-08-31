@@ -6,7 +6,7 @@
  */
 #include <Module.hpp>
 
-Module::Module() {
+Module::Module() : pointerCnt(0) {
 	for(uint32_t i = 0; i < ::SAMPLES_IN_BLOCK;
 			outputBuffer[i] = 0, i++);
 
@@ -18,12 +18,14 @@ const_uint32_t_ptr Module::getOutputBufferPointer() const {
 	return outputBuffer;
 };
 
-uint32_t Module::getNumberOfNextFreeInputBuffer() const {
-	for (uint32_t i = 0; i < ::LINKS; i++) {
+uint32_t Module::getNumberOfNextFreeInputBuffer() {
+	/*for (uint32_t i = 0; i < ::LINKS; i++) {
 		if (!inputBufferPointer[i])
 			return i;
 	};
-	return ::LINKS;
+	return ::LINKS;*/
+	pointerCnt++;
+	return pointerCnt;
 };
 
 Module::Error Module::setInputBufferPointer(const uint32_t& bufferNumber,

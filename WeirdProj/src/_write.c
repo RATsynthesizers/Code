@@ -25,62 +25,48 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
+// Do not include on semihosting and when freestanding
+#if !defined(OS_USE_SEMIHOSTING) && !(__STDC_HOSTED__ == 0)
+
 // ----------------------------------------------------------------------------
 
-#include <stdio.h>
-#include <stdlib.h>
-#include "arm_math.h"
-#include <math.h>
+#include <errno.h>
 #include "diag/Trace.h"
 
-#include <Globals.hpp>
-#include <Generic.hpp>
-#include <Wire.hpp>
-#include <Generator.hpp>
-#include <Amp.hpp>
-
 // ----------------------------------------------------------------------------
-//
-// Standalone STM32F4 empty sample (trace via DEBUG).
-//
-// Trace support is enabled by adding the TRACE macro definition.
-// By default the trace messages are forwarded to the DEBUG output,
-// but can be rerouted to any device or completely suppressed, by
-// changing the definitions required in system/src/diag/trace_impl.c
-// (currently OS_USE_TRACE_ITM, OS_USE_TRACE_SEMIHOSTING_DEBUG/_STDOUT).
-//
 
-// ----- main() ---------------------------------------------------------------
+// When using retargetted configurations, the standard write() system call,
+// after a long way inside newlib, finally calls this implementation function.
 
-// Sample pragmas to cope with warnings. Please note the related line at
-// the end of this function, used to pop the compiler diagnostics status.
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wunused-parameter"
-#pragma GCC diagnostic ignored "-Wmissing-declarations"
-#pragma GCC diagnostic ignored "-Wreturn-type"
+// Based on the file descriptor, it can send arrays of characters to
+// different physical devices.
 
-int
-main(int argc, char* argv[])
+// Currently only the output and error file descriptors are tested,
+// and the characters are forwarded to the trace device, mainly
+// for demonstration purposes. Adjust it for your specific needs.
+
+// For freestanding applications this file is not used and can be safely
+// ignored.
+
+ssize_t
+_write (int fd, const char* buf, size_t nbyte);
+
+ssize_t
+_write (int fd __attribute__((unused)), const char* buf __attribute__((unused)),
+	size_t nbyte __attribute__((unused)))
 {
-	// At this stage the system clock should have already been configured
-	// at high speed.
-	//Generic::initializeModules();
+#if defined(TRACE)
+  // STDOUT and STDERR are routed to the trace device
+  if (fd == 1 || fd == 2)
+    {
+      return trace_write (buf, nbyte);
+    }
+#endif // TRACE
 
-	Generator g1(1,440,0);
-	Amp a1(1);
-
-	//Wire w1(g1, a1);
-    Wire w2(g1,a1, reinterpret_cast<uint32_t_ptr&>(a1.ampBufferPointer), a1.ampBufferCounter);
-
-
-	// Infinite loop
-	while (1) {
-		// Add your code here.
-		g1.process();
-		a1.process();
-	}
+  errno = ENOSYS;
+  return -1;
 }
 
-#pragma GCC diagnostic pop
-
 // ----------------------------------------------------------------------------
+
+#endif // !defined(OS_USE_SEMIHOSTING) && !(__STDC_HOSTED__ == 0)
