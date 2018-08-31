@@ -25,6 +25,8 @@ public:
 	void setOffset(const uint32_t& offst);
 
 	static uint32_t getInstance();
+
+	void process();
 private:
 	Generator();
 	Generator(const Generator& in);
@@ -35,6 +37,8 @@ private:
 	uint32_t frequency;
 
 	uint32_t offset;
+	uint32_t wavePhase;
+
 };
 
 #endif /* GENERATOR_HPP_ */

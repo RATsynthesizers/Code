@@ -9,11 +9,14 @@
 #define WIRE_HPP_
 
 #include <Module.hpp>
+#include <Amp.hpp>
 #include "stm32f4xx.h"
 
 class Wire {
 public:
 	Wire(const Module& providerParam, Module& consumerParam);
+	Wire(const Module& providerParam, Module& consumerParam,
+			uint32_t_ptr& inBufPtr_, uint32_t& bufCnt_);
 
 	void unplug();
 private:

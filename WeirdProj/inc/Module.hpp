@@ -19,16 +19,17 @@ public:
 	};
 
 	enum class ModuleType {
-		NOT_INITIALIZED = 0, GENERATOR = 1
+		NOT_INITIALIZED = 0, GENERATOR = 1, AMPLIFIER = 2
 	};
 
+
 	Module();
-	virtual ~Module();
+	virtual ~Module() {};
 
 	const_uint32_t_ptr getOutputBufferPointer() const;
 
 	//Returns ::LINKS if all input buffers were reserved
-	uint32_t getNumberOfNextFreeInputBuffer() const;
+	uint32_t getNumberOfNextFreeInputBuffer();
 	Error setInputBufferPointer(const uint32_t& bufferNumber,
 			const_uint32_t_ptr pointer);
 
@@ -36,6 +37,7 @@ public:
 
 	virtual void process() = 0;
 protected:
+	uint32_t pointerCnt;
 	const_uint32_t_ptr inputBufferPointer[::LINKS];
 	uint32_t outputBuffer[::SAMPLES_IN_BLOCK];
 	ModuleType moduleType = ModuleType::NOT_INITIALIZED;
