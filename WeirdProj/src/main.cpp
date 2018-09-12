@@ -59,8 +59,7 @@
 #pragma GCC diagnostic ignored "-Wmissing-declarations"
 #pragma GCC diagnostic ignored "-Wreturn-type"
 
-int
-main(int argc, char* argv[])
+int main()
 {
 	// At this stage the system clock should have already been configured
 	// at high speed.
@@ -70,7 +69,7 @@ main(int argc, char* argv[])
 	Amp a1(1);
 
 	//Wire w1(g1, a1);
-    Wire w2(g1,a1, reinterpret_cast<uint32_t_ptr&>(a1.ampBufferPointer), a1.ampBufferCounter);
+    //Wire w2(g1,a1, reinterpret_cast<uint32_t_ptr&>(a1.ampBufferPointer), a1.ampBufferCounter);
 
 
 	// Infinite loop

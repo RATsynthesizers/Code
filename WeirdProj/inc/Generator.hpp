@@ -11,7 +11,7 @@
 #include <Module.hpp>
 #include "stm32f4xx.h"
 
-class Generator : public Module {
+class Generator: public Module {
 public:
 	Generator(const uint32_t& amp, const uint32_t& freq, const uint32_t& offst);
 
@@ -27,17 +27,13 @@ public:
 	static uint32_t getInstance();
 
 	void process();
+
+	Parameter parameter[4];
 private:
 	Generator();
 	Generator(const Generator& in);
 
 	static uint32_t instance;
-
-	uint32_t amplification;
-	uint32_t frequency;
-
-	uint32_t offset;
-	uint32_t wavePhase;
 
 };
 

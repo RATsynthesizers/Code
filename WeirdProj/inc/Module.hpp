@@ -12,33 +12,36 @@
 #include "stm32f4xx.h"
 #include <Globals.hpp>
 
+struct Parameter
+{
+
+	enum class ParameterName {
+		AUDIO_IN = 0, FREQUENCY, AMPLIFICATION, OFFSET, WAVEFORM
+	};
+
+	uint32_t value;
+	const_uint32_t_ptr inputBufferPointer[::LINKS];
+	uint32_t bitmap;
+	ParameterName paramType;
+
+	void setInputBufferPointer(const_uint32_t_ptr pointer);
+};
+
 class Module {
 public:
-	enum class Error {
-		NO_ERROR = 0, INVALID_BUFFER_NUMBER = 1
-	};
-
 	enum class ModuleType {
-		NOT_INITIALIZED = 0, GENERATOR = 1, AMPLIFIER = 2
+		NOT_INITIALIZED = -1, GENERATOR, AMPLIFIER
 	};
-
 
 	Module();
 	virtual ~Module() {};
 
 	const_uint32_t_ptr getOutputBufferPointer() const;
-
-	//Returns ::LINKS if all input buffers were reserved
-	uint32_t getNumberOfNextFreeInputBuffer();
-	Error setInputBufferPointer(const uint32_t& bufferNumber,
-			const_uint32_t_ptr pointer);
-
 	ModuleType getModuleType() const;
 
 	virtual void process() = 0;
+
 protected:
-	uint32_t pointerCnt;
-	const_uint32_t_ptr inputBufferPointer[::LINKS];
 	uint32_t outputBuffer[::SAMPLES_IN_BLOCK];
 	ModuleType moduleType = ModuleType::NOT_INITIALIZED;
 };

@@ -13,10 +13,10 @@ Amp::Amp(uint32_t amp_) {
 	moduleType = ModuleType::AMPLIFIER;
 	instance++;
 
-	amp = amp_;
+	/*amp = amp_;
 	ampBufferCounter = 0;
 	for(uint32_t i = 0; i < ::LINKS;
-		inputBufferPointer[i] = nullptr, i++);
+			test.inputBufferPointer[i] = nullptr, i++);*/
 
 };
 
@@ -26,7 +26,7 @@ uint32_t Amp::getInstance() {
 
 void Amp::process() {
 	for(uint32_t buf_cnt =0; buf_cnt < SAMPLES_IN_BLOCK; buf_cnt++) {
-	outputBuffer[buf_cnt] = (amp + *(ampBufferPointer + buf_cnt) * (*(inputBufferPointer[0] + buf_cnt));
+	//outputBuffer[buf_cnt] = (amp + *(ampBufferPointer + buf_cnt) * (*(inputBufferPointer[0] + buf_cnt));
 	}
 };
 
