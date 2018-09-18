@@ -29,12 +29,15 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "arm_math.h"
+#include <math.h>
 #include "diag/Trace.h"
 
 #include <Globals.hpp>
 #include <Generic.hpp>
 #include <Wire.hpp>
 #include <Generator.hpp>
+#include <Amp.hpp>
 
 // ----------------------------------------------------------------------------
 //
@@ -56,16 +59,24 @@
 #pragma GCC diagnostic ignored "-Wmissing-declarations"
 #pragma GCC diagnostic ignored "-Wreturn-type"
 
-int
-main(int argc, char* argv[])
+int main()
 {
 	// At this stage the system clock should have already been configured
 	// at high speed.
-	Generic::initializeModules();
+	//Generic::initializeModules();
+
+	Generator g1(1,440,0);
+	Amp a1(1);
+
+	//Wire w1(g1, a1);
+    //Wire w2(g1,a1, reinterpret_cast<uint32_t_ptr&>(a1.ampBufferPointer), a1.ampBufferCounter);
+
 
 	// Infinite loop
 	while (1) {
 		// Add your code here.
+		g1.process();
+		a1.process();
 	}
 }
 

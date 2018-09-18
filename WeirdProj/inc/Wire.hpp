@@ -9,19 +9,18 @@
 #define WIRE_HPP_
 
 #include <Module.hpp>
+#include <Generator.hpp>
+#include <Amp.hpp>
 #include "stm32f4xx.h"
 
 class Wire {
 public:
-	Wire(const Module& providerParam, Module& consumerParam);
+	Wire(const Module& provider_, Module& consumer_,
+			Parameter::ParameterName parameter);
 
 	void unplug();
 private:
-	Wire();
-	Wire(const Wire& in);
-
 	Module& consumer;
-	uint32_t bufferNumber;
 };
 
 #endif /* WIRE_HPP_ */
