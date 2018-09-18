@@ -1,0 +1,30 @@
+17:41:38 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:142:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:156:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "WinProj.elf" @"objects.list"   -lm
+Finished building target: WinProj.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "WinProj.elf" "WinProj.hex"
+arm-none-eabi-size "WinProj.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3908	     20	   1572	   5500	   157c	WinProj.elf
+ 
+
+17:41:42 Build Finished (took 3s.715ms)
+
