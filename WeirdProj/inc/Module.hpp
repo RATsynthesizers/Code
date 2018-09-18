@@ -24,7 +24,7 @@ struct Parameter
 	uint32_t bitmap;
 	ParameterName paramType;
 
-	void setInputBufferPointer(const_uint32_t_ptr pointer);
+	//uint32_t setInputBufferPointer(const_uint32_t_ptr pointer);
 };
 
 class Module {
@@ -40,7 +40,7 @@ public:
 	ModuleType getModuleType() const;
 
 	virtual void process() = 0;
-
+    uint32_t connectedWires;
 protected:
 	uint32_t outputBuffer[::SAMPLES_IN_BLOCK];
 	ModuleType moduleType = ModuleType::NOT_INITIALIZED;
