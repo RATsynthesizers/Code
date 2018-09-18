@@ -19,14 +19,15 @@ public:
 			Parameter::ParameterName parameter_);
 
 	void unplug();
-	void replugConsumer(const Module& consumer_,
+	void replugConsumer(Module& consumer_,
 			Parameter::ParameterName parameter_);
-	void replugProvider(const Module& provider_);
+	void replugProvider(Module& provider_);
 
 	uint32_t bufferNumber;
+	uint32_t realParamNum;
 private:
-	Module& consumer;
-	Module& provider;
+	Module *consumer;
+	Module *provider;
 
 	void plug(Parameter::ParameterName parameter_);
 };
