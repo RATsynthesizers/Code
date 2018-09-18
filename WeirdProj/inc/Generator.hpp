@@ -13,22 +13,20 @@
 
 class Generator: public Module {
 public:
+
+	enum class Params {
+		Number = 4
+	};
+
+	//const static uint32_t numberOfParameters;
+
 	Generator(const uint32_t& amp, const uint32_t& freq, const uint32_t& offst);
-
-	uint32_t getAmplification() const;
-	void setAmplification(const uint32_t& amp);
-
-	uint32_t getFrequency() const;
-	void setFrequency(uint32_t freq);
-
-	uint32_t getOffset() const;
-	void setOffset(const uint32_t& offst);
 
 	static uint32_t getInstance();
 
 	void process();
 
-	Parameter parameter[4];
+	Parameter parameter[static_cast<uint32_t>(Params::Number)];
 private:
 	Generator();
 	Generator(const Generator& in);

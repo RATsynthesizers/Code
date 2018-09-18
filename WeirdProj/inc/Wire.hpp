@@ -15,12 +15,20 @@
 
 class Wire {
 public:
-	Wire(const Module& provider_, Module& consumer_,
-			Parameter::ParameterName parameter);
+	Wire(Module& provider_, Module& consumer_,
+			Parameter::ParameterName parameter_);
 
 	void unplug();
+	void replugConsumer(const Module& consumer_,
+			Parameter::ParameterName parameter_);
+	void replugProvider(const Module& provider_);
+
+	uint32_t bufferNumber;
 private:
 	Module& consumer;
+	Module& provider;
+
+	void plug(Parameter::ParameterName parameter_);
 };
 
 #endif /* WIRE_HPP_ */
