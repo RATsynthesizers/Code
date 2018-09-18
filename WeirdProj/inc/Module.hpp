@@ -8,7 +8,7 @@
 #ifndef MODULE_HPP_
 #define MODULE_HPP_
 
-#include <typeinfo>
+
 #include "stm32f4xx.h"
 #include <Globals.hpp>
 

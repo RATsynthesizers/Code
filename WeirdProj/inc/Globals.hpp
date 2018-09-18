@@ -16,8 +16,8 @@ enum GlobalParameters {
 	DIGITS = 32, //For 32-bit processor
 	BYTES = 4,
 	SAMPLES_IN_BLOCK = 32,
-	LINKS = 16//,
-	//MAX_OUT_BUFFER_SIZE = 4
+	LINKS = 16 //,
+//MAX_OUT_BUFFER_SIZE = 4
 };
 
 #endif /* GLOBALS_HPP_ */

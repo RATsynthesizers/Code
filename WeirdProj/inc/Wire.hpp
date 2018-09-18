@@ -15,7 +15,7 @@
 
 class Wire {
 public:
-	Wire(Module& provider_, Module& consumer_,
+	Wire(Module& source_, Module& destination_,
 			Parameter::ParameterName parameter_);
 
 	void unplug();

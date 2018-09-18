@@ -42,7 +42,16 @@
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
+#include <stdio.h>
+#include <stdlib.h>
+//#include "arm_math.h"      ? дефайны математики и FPU
+#include <math.h>
 
+#include <Globals.hpp>
+#include <Generic.hpp>
+#include <Wire.hpp>
+#include <Generator.hpp>
+#include <Amp.hpp>
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -72,13 +81,13 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	Generator g1(1,440,0);
-	Amp a1(1);
-	Wire w1(a1, g1, Parameter::ParameterName::AMPLIFICATION);
-	Amp a2(1);
-	Generator g2(1,440,0);
-	w1.replugConsumer(g2, Parameter::ParameterName::AMPLIFICATION);
-	w1.replugProvider(a2);
+//	Generator g1(1,440,0);
+//	Amp a1(1);
+//	Wire w1(a1, g1, Parameter::ParameterName::AMPLIFICATION);
+//	Amp a2(1);
+//	Generator g2(1,440,0);
+//	w1.replugConsumer(g2, Parameter::ParameterName::AMPLIFICATION);
+//	w1.replugProvider(a2);
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
