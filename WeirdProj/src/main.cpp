@@ -66,9 +66,14 @@ int main()
 	//Generic::initializeModules();
 
 	Generator g1(1,440,0);
+	Generator g2(10,40,20);
 	Amp a1(1);
+	Amp a2(10);
 
-	Wire w1(g1, a1, Parameter::ParameterName::AMPLIFICATION);
+	Wire w1(a1, g1, Parameter::ParameterName::AMPLIFICATION);
+	w1.replugConsumer(g2, Parameter::ParameterName::AMPLIFICATION);
+	w1.replugProvider(a2);
+
     //Wire w2(g1,a1, reinterpret_cast<uint32_t_ptr&>(a1.ampBufferPointer), a1.ampBufferCounter);
 
 
