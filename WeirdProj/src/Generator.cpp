@@ -8,6 +8,7 @@
 #include <Generator.hpp>
 
 uint32_t Generator::instance = 0;
+//const uint32_t Generator::numberOfParameters = 4;
 
 Generator::Generator(const uint32_t& amp, const uint32_t& freq,
 		const uint32_t& offst)
@@ -18,6 +19,14 @@ Generator::Generator(const uint32_t& amp, const uint32_t& freq,
 	parameter[1].paramType= Parameter::ParameterName::AMPLIFICATION;
 	parameter[2].paramType= Parameter::ParameterName::OFFSET;
 	parameter[3].paramType= Parameter::ParameterName::WAVEFORM;
+
+	for(uint32_t i = 0; i < static_cast<uint32_t>(Params::Number); i++) {
+		parameter[i].bitmap = 0;
+		parameter[i].value = 0;
+
+		for(uint32_t j = 0; j < ::LINKS; parameter[i].inputBufferPointer[j] = nullptr, j++);
+	};
+
 	instance++;
 };
 

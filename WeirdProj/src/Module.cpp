@@ -6,19 +6,20 @@
  */
 #include <Module.hpp>
 
-void Parameter::setInputBufferPointer(const_uint32_t_ptr pointer) {
+/*uint32_t Parameter::setInputBufferPointer(const_uint32_t_ptr pointer) {
 	uint32_t shiftingValue = bitmap;
-	uint32_t bitNumberInShiftingValue = 0;
+	uint32_t socketNumber = 0;
 
 	while (shiftingValue & 1) {
 		shiftingValue >>= 1;
-		bitNumberInShiftingValue++;
+		socketNumber++;
 	};
 
-	Parameter::inputBufferPointer[bitNumberInShiftingValue] = pointer;
-};
+	Parameter::inputBufferPointer[socketNumber] = pointer;
+	return socketNumber;
+};*/
 
-Module::Module() {
+Module::Module() : connectedWires(0) {
 	for(uint32_t i = 0; i < ::SAMPLES_IN_BLOCK;
 			outputBuffer[i] = 0, i++);
 };

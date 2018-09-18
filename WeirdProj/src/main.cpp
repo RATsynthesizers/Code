@@ -68,7 +68,7 @@ int main()
 	Generator g1(1,440,0);
 	Amp a1(1);
 
-	//Wire w1(g1, a1);
+	Wire w1(g1, a1, Parameter::ParameterName::AMPLIFICATION);
     //Wire w2(g1,a1, reinterpret_cast<uint32_t_ptr&>(a1.ampBufferPointer), a1.ampBufferCounter);
 
 
