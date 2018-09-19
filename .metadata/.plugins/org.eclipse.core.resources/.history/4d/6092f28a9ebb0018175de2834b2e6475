@@ -1,0 +1,38 @@
+/*
+ * Amp.hpp
+ *
+ *  Created on: 31 авг. 2018 г.
+ *      Author: wetfloor
+ */
+
+#ifndef AMP_HPP_
+#define AMP_HPP_
+
+#include <Module.hpp>
+#include "stm32f4xx.h"
+
+
+class Amp : public Module {
+public:
+	Amp(uint32_t amp_);   // -> inputBufferPointer[0];
+
+	static uint32_t getInstance();
+	void process();     //  -> inputBufferPointer[::LINKS-1]
+
+	uint32_t amp;
+	const_uint32_t_ptr ampBufferPointer[::LINKS];
+	uint32_t ampBufferCounter;
+
+
+
+private:
+	//Amp();
+	//Amp(const Amp& in);
+
+	static uint32_t instance;
+
+};
+
+
+
+#endif /* AMP_HPP_ */

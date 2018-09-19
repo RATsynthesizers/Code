@@ -11,11 +11,16 @@
 #include <Module.hpp>
 #include "stm32f4xx.h"
 
+#define G_f   0     // ?P
+#define G_a   1
+#define G_ofs 2
+#define G_w   3
+
 class Generator: public Module {
 public:
 
 	enum class Params {
-		Number = 4
+		Number = 4       // ?P
 	};
 
 	//const static uint32_t numberOfParameters;
@@ -26,7 +31,7 @@ public:
 
 	void process();
 
-	Parameter parameter[static_cast<uint32_t>(Params::Number)];
+	Parameter prm[static_cast<uint32_t>(Params::Number)];
 private:
 	Generator();
 	Generator(const Generator& in);

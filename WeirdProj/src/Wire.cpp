@@ -7,45 +7,44 @@
 
 #include <Wire.hpp>
 
-Wire::Wire(Module& source_, Module& destination_,
-		Parameter::ParameterName parameter_) :
-		provider(&source_), consumer(&destination_), bufferNumber(0) {
+Wire::Wire(Module& src_, Module& dst_, Parameter::ParamName param_) :
+		source(&src_), destination(&dst_), bufferNumber(0) {
 
-	plug(parameter_);
-	source_.connectedWires++;
+	plug(param_);
+	src_.connectedWires++;
 	/*uint32_t realParamNum;
-	switch (consumer_.getModuleType()) {
-	case Module::ModuleType::GENERATOR: {
-		for (realParamNum = 0;
-				realParamNum
-						< sizeof(Generator::parameter)
-								/ sizeof(Parameter::ParameterName);
-				realParamNum++) {
-			if (parameter_
-					== dynamic_cast<Generator&>(consumer_).parameter[realParamNum].paramType) {
-				uint32_t shiftingValue =
-						dynamic_cast<Generator&>(consumer_).parameter[realParamNum].bitmap;
-				uint32_t socketNumber = 0;
+	 switch (consumer_.getModuleType()) {
+	 case Module::ModuleType::GENERATOR: {
+	 for (realParamNum = 0;
+	 realParamNum
+	 < sizeof(Generator::parameter)
+	 / sizeof(Parameter::ParameterName);
+	 realParamNum++) {
+	 if (parameter_
+	 == dynamic_cast<Generator&>(consumer_).parameter[realParamNum].paramType) {
+	 uint32_t shiftingValue =
+	 dynamic_cast<Generator&>(consumer_).parameter[realParamNum].bitmap;
+	 uint32_t socketNumber = 0;
 
-				while (shiftingValue & 1) {
-					shiftingValue >>= 1;
-					socketNumber++;
-				};
+	 while (shiftingValue & 1) {
+	 shiftingValue >>= 1;
+	 socketNumber++;
+	 };
 
-				dynamic_cast<Generator&>(consumer_).parameter[realParamNum].inputBufferPointer[socketNumber] =
-						provider_.getOutputBufferPointer();
+	 dynamic_cast<Generator&>(consumer_).parameter[realParamNum].inputBufferPointer[socketNumber] =
+	 provider_.getOutputBufferPointer();
 
-				dynamic_cast<Generator&>(consumer_).parameter[realParamNum].bitmap |=
-						(1 << socketNumber);
+	 dynamic_cast<Generator&>(consumer_).parameter[realParamNum].bitmap |=
+	 (1 << socketNumber);
 
-				bufferNumber = socketNumber;
-				break;
-			};
-			//dynamic_cast<Generator&>(consumer_).parameter[realParamNum]
-		};
-	}
-		;
-	};*/
+	 bufferNumber = socketNumber;
+	 break;
+	 };
+	 //dynamic_cast<Generator&>(consumer_).parameter[realParamNum]
+	 };
+	 }
+	 ;
+	 };*/
 };
 
 /*Wire::Wire(const Module& providerParam, Module& consumerParam, )
@@ -58,67 +57,65 @@ Wire::Wire(Module& source_, Module& destination_,
  };*/
 
 void Wire::unplug() {
-	dynamic_cast<Generator&>(*consumer).parameter[realParamNum].bitmap &= ~(1
-			<< bufferNumber);
-	provider->connectedWires--;
+	dynamic_cast<Generator&>(*destination).prm[realParamNum].socketbit &= ~(1 // ?M
+	<< bufferNumber);
+	source->connectedWires--;
 	/*if (bufferNumber < ::LINKS) {
 	 consumer.setInputBufferPointer(bufferNumber, nullptr);
 	 };
 	 delete this;*/
 };
 
-void Wire::replugConsumer(Module& consumer_,
-		Parameter::ParameterName parameter_) {
-	dynamic_cast<Generator&>(*consumer).parameter[realParamNum].bitmap &= ~(1
-			<< bufferNumber);
-	consumer = &consumer_;
-	plug(parameter_);
-};
+void Wire::replugConsumer(Module& dst_, Parameter::ParamName param_) {
+	dynamic_cast<Generator&>(*destination).prm[realParamNum].socketbit &= ~(1 // ?M
+	<< bufferNumber);
+	destination = &dst_;
+	plug(param_);
+}
+;
 
-void Wire::replugProvider(Module& provider_) {
-	provider->connectedWires--;
-	provider = &provider_;
-	provider->connectedWires++;
-	switch (consumer->getModuleType()) {
-	case Module::ModuleType::GENERATOR: {
-		dynamic_cast<Generator&>(*consumer).parameter[realParamNum].inputBufferPointer[bufferNumber] =
-				provider->getOutputBufferPointer();
+void Wire::replugProvider(Module& src_) {
+	source->connectedWires--;
+	source = &src_;
+	source->connectedWires++;
+	switch (destination->getModuleType()) {
+	case Module::ModuleType::GENERATOR: {                                  // ?M
+		dynamic_cast<Generator&>(*destination).prm[realParamNum].inputBufferPointer[bufferNumber] =
+				source->getOutputBufferPointer();
 
-		};
+	};
 	};
 };
 
-void Wire::plug(Parameter::ParameterName parameter_) {
-	switch (consumer->getModuleType()) {
-		case Module::ModuleType::GENERATOR: {
-			for (realParamNum = 0;
-					realParamNum
-							< sizeof(Generator::parameter)
-									/ sizeof(Parameter::ParameterName);
-					realParamNum++) {
-				if (parameter_
-						== dynamic_cast<Generator&>(*consumer).parameter[realParamNum].paramType) {
-					uint32_t shiftingValue =
-							dynamic_cast<Generator&>(*consumer).parameter[realParamNum].bitmap;
-					uint32_t socketNumber = 0;
+void Wire::plug(Parameter::ParamName param_) {
+	switch (destination->getModuleType()) {
+	case Module::ModuleType::GENERATOR: {
+		for (realParamNum = 0;
+				realParamNum
+						< sizeof(Generator::prm) / sizeof(Parameter::ParamName);
+				realParamNum++) {
+			if (param_
+					== dynamic_cast<Generator&>(*destination).prm[realParamNum].paramType) {
+				uint32_t shiftingValue =
+						dynamic_cast<Generator&>(*destination).prm[realParamNum].socketbit;
+				uint32_t socketNumber = 0;
 
-					while (shiftingValue & 1) {
-						shiftingValue >>= 1;
-						socketNumber++;
-					};
-
-					dynamic_cast<Generator&>(*consumer).parameter[realParamNum].inputBufferPointer[socketNumber] =
-							provider->getOutputBufferPointer();
-
-					dynamic_cast<Generator&>(*consumer).parameter[realParamNum].bitmap |=
-							(1 << socketNumber);
-
-					bufferNumber = socketNumber;
-					break;
+				while (shiftingValue & 1) {
+					shiftingValue >>= 1;
+					socketNumber++;
 				};
-				//dynamic_cast<Generator&>(consumer_).parameter[realParamNum]
+
+				dynamic_cast<Generator&>(*destination).prm[realParamNum].inputBufferPointer[socketNumber] =
+						source->getOutputBufferPointer();
+
+				dynamic_cast<Generator&>(*destination).prm[realParamNum].socketbit |=
+						(1 << socketNumber);
+
+				bufferNumber = socketNumber;
+				break;
 			};
-		}
-			;
+
 		};
+	};
+	};
 };

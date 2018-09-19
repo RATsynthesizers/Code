@@ -1,14 +1,57 @@
-01:46:24 **** Incremental Build of configuration Debug for project WinProj ****
+02:40:54 **** Incremental Build of configuration Debug for project WinProj ****
 make all 
+Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generic.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/Generic.d" -MT"modules/src/Generic.o" -o "modules/src/Generic.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generic.cpp"
+Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generic.cpp
+ 
+Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/Wire.d" -MT"modules/src/Wire.o" -o "modules/src/Wire.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp"
+In file included from D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:8:0:
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp: In constructor 'Wire::Wire(Module&, Module&, Parameter::ParameterName)':
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:30:10: warning: 'Wire::provider' will be initialized after [-Wreorder]
+  Module *provider;
+          ^~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:29:10: warning:   'Module* Wire::consumer' [-Wreorder]
+  Module *consumer;
+          ^~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:10:1: warning:   when initialized here [-Wreorder]
+ Wire::Wire(Module& source_, Module& destination_,
+ ^~~~
+In file included from D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:8:0:
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:29:10: warning: 'Wire::consumer' will be initialized after [-Wreorder]
+  Module *consumer;
+          ^~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:26:11: warning:   'uint32_t Wire::bufferNumber' [-Wreorder]
+  uint32_t bufferNumber;
+           ^~~~~~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:10:1: warning:   when initialized here [-Wreorder]
+ Wire::Wire(Module& source_, Module& destination_,
+ ^~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp: In member function 'void Wire::replugProvider(Module&)':
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:82:9: warning: enumeration value 'NOT_INITIALIZED' not handled in switch [-Wswitch]
+  switch (consumer->getModuleType()) {
+         ^
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:82:9: warning: enumeration value 'AMPLIFIER' not handled in switch [-Wswitch]
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp: In member function 'void Wire::plug(Parameter::ParameterName)':
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:92:9: warning: enumeration value 'NOT_INITIALIZED' not handled in switch [-Wswitch]
+  switch (consumer->getModuleType()) {
+         ^
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:92:9: warning: enumeration value 'AMPLIFIER' not handled in switch [-Wswitch]
+Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp
+ 
 Building file: ../Src/main.cpp
 Invoking: MCU G++ Compiler
 D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
 arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
 ../Src/main.cpp: In function 'void SystemClock_Config()':
-../Src/main.cpp:157:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     _Error_Handler(__FILE__, __LINE__);
+../Src/main.cpp:162:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);             // ?? warning
                                       ^
-../Src/main.cpp:171:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../Src/main.cpp:176:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
      _Error_Handler(__FILE__, __LINE__);
                                       ^
 Finished building: ../Src/main.cpp
@@ -23,8 +66,8 @@ Generating hex and Printing size information:
 arm-none-eabi-objcopy -O ihex "WinProj.elf" "WinProj.hex"
 arm-none-eabi-size "WinProj.elf"
    text	   data	    bss	    dec	    hex	filename
-   3860	     20	   1572	   5452	   154c	WinProj.elf
+   6100	    124	   1588	   7812	   1e84	WinProj.elf
  
 
-01:46:27 Build Finished (took 2s.873ms)
+02:41:00 Build Finished (took 5s.808ms)
 

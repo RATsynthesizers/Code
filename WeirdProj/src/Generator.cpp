@@ -10,21 +10,26 @@
 uint32_t Generator::instance = 0;
 //const uint32_t Generator::numberOfParameters = 4;
 
-Generator::Generator(const uint32_t& amp, const uint32_t& freq,
-		const uint32_t& offst)
+Generator::Generator(const uint32_t& amp_, const uint32_t& freq_,
+		const uint32_t& offset_)
 	/*: amplification(amp), frequency(freq), offset(offst), wavePhase(0) */{
 	moduleType = ModuleType::GENERATOR;
 
-	parameter[0].paramType= Parameter::ParameterName::FREQUENCY;
-	parameter[1].paramType= Parameter::ParameterName::AMPLIFICATION;
-	parameter[2].paramType= Parameter::ParameterName::OFFSET;
-	parameter[3].paramType= Parameter::ParameterName::WAVEFORM;
+	prm[G_f  ].paramType = Parameter::ParamName::FREQUENCY;    // ?P
+	prm[G_a  ].paramType = Parameter::ParamName::AMPLIFICATION;
+	prm[G_ofs].paramType = Parameter::ParamName::OFFSET;
+	prm[G_w  ].paramType = Parameter::ParamName::WAVEFORM;
+
+	prm[0].value = freq_;                                     // ?P
+	prm[1].value = amp_;
+	prm[2].value = offset_;
+
 
 	for(uint32_t i = 0; i < static_cast<uint32_t>(Params::Number); i++) {
-		parameter[i].bitmap = 0;
-		parameter[i].value = 0;
+		prm[i].socketbit = 0;
+		prm[i].value = 0;
 
-		for(uint32_t j = 0; j < ::LINKS; parameter[i].inputBufferPointer[j] = nullptr, j++);
+		for(uint32_t j = 0; j < ::SOCKETS; prm[i].inputBufferPointer[j] = nullptr, j++);
 	};
 
 	instance++;

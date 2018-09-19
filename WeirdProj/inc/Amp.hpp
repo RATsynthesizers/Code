@@ -20,7 +20,7 @@ public:
 	void process();     //  -> inputBufferPointer[::LINKS-1]
 
 	uint32_t amp;
-	const_uint32_t_ptr ampBufferPointer[::LINKS];
+	c_u32_ptr ampBufferPointer[::SOCKETS];
 	uint32_t ampBufferCounter;
 
 

@@ -42,16 +42,17 @@
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
+//=========================================================
+// значения тегов с "?" находятся в ./WeirdProj/words.txt
+//=========================================================
 #include <stdio.h>
 #include <stdlib.h>
-//#include "arm_math.h"      ? дефайны математики и FPU
+//#include "arm_math.h"      ?? дефайны математики и FPU
 #include <math.h>
 
 #include <Globals.hpp>
 #include <Generic.hpp>
-#include <Wire.hpp>
-#include <Generator.hpp>
-#include <Amp.hpp>
+#include <Modules.hpp>
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -81,13 +82,15 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-//	Generator g1(1,440,0);
-//	Amp a1(1);
-//	Wire w1(a1, g1, Parameter::ParameterName::AMPLIFICATION);
-//	Amp a2(1);
-//	Generator g2(1,440,0);
-//	w1.replugConsumer(g2, Parameter::ParameterName::AMPLIFICATION);
-//	w1.replugProvider(a2);
+
+	// wire reconnect example
+	Generator g1(1,440,0);
+	Amp a1(1);
+	Wire w1(a1, g1, Parameter::ParamName::AMPLIFICATION);
+	Amp a2(1);
+	Generator g2(1,440,0);
+	w1.replugConsumer(g2, Parameter::ParamName::AMPLIFICATION);
+	w1.replugProvider(a2);
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -154,7 +157,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLQ = 4;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
-    _Error_Handler(__FILE__, __LINE__);
+    _Error_Handler(__FILE__, __LINE__);             // ?? warning
   }
 
     /**Initializes the CPU, AHB and APB busses clocks 

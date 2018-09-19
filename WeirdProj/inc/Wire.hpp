@@ -8,28 +8,26 @@
 #ifndef WIRE_HPP_
 #define WIRE_HPP_
 
-#include <Module.hpp>
-#include <Generator.hpp>
-#include <Amp.hpp>
 #include "stm32f4xx.h"
+#include <Modules.hpp>
 
 class Wire {
 public:
-	Wire(Module& source_, Module& destination_,
-			Parameter::ParameterName parameter_);
+	Wire(Module& src_, Module& dst_,
+			Parameter::ParamName param_);
 
 	void unplug();
-	void replugConsumer(Module& consumer_,
-			Parameter::ParameterName parameter_);
-	void replugProvider(Module& provider_);
+	void replugConsumer(Module& dst_,
+			Parameter::ParamName param_);
+	void replugProvider(Module& src_);
 
 	uint32_t bufferNumber;
 	uint32_t realParamNum;
 private:
-	Module *consumer;
-	Module *provider;
+	Module *destination;
+	Module *source;
 
-	void plug(Parameter::ParameterName parameter_);
+	void plug(Parameter::ParamName param_);
 };
 
 #endif /* WIRE_HPP_ */

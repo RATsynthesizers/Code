@@ -20,11 +20,11 @@
 };*/
 
 Module::Module() : connectedWires(0) {
-	for(uint32_t i = 0; i < ::SAMPLES_IN_BLOCK;
+	for(uint32_t i = 0; i < ::BLOCKSIZE;
 			outputBuffer[i] = 0, i++);
 };
 
-const_uint32_t_ptr Module::getOutputBufferPointer() const {
+c_u32_ptr Module::getOutputBufferPointer() const {
 	return outputBuffer;
 };
 

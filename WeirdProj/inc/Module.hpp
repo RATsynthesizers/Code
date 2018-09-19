@@ -14,15 +14,14 @@
 
 struct Parameter
 {
-
-	enum class ParameterName {
-		AUDIO_IN = 0, FREQUENCY, AMPLIFICATION, OFFSET, WAVEFORM
+	enum class ParamName {
+		AUDIO_IN = 0, FREQUENCY, AMPLIFICATION, OFFSET, WAVEFORM   // ?P ?M
 	};
 
-	uint32_t value;
-	const_uint32_t_ptr inputBufferPointer[::LINKS];
-	uint32_t bitmap;
-	ParameterName paramType;
+	uint32_t  value;
+	c_u32_ptr inputBufferPointer[::SOCKETS];
+	uint32_t  socketbit;
+	ParamName paramType;
 
 	//uint32_t setInputBufferPointer(const_uint32_t_ptr pointer);
 };
@@ -30,19 +29,19 @@ struct Parameter
 class Module {
 public:
 	enum class ModuleType {
-		NOT_INITIALIZED = -1, GENERATOR, AMPLIFIER
+		NOT_INITIALIZED = -1, GENERATOR, AMPLIFIER                 // ?M
 	};
 
 	Module();
 	virtual ~Module() {};
 
-	const_uint32_t_ptr getOutputBufferPointer() const;
+	c_u32_ptr getOutputBufferPointer() const;
 	ModuleType getModuleType() const;
 
 	virtual void process() = 0;
     uint32_t connectedWires;
 protected:
-	uint32_t outputBuffer[::SAMPLES_IN_BLOCK];
+	uint32_t outputBuffer[::BLOCKSIZE];
 	ModuleType moduleType = ModuleType::NOT_INITIALIZED;
 };
 

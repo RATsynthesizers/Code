@@ -57,6 +57,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/inc/Module.hpp</locationURI>
 		</link>
 		<link>
+			<name>modules/inc/Modules.hpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/inc/Modules.hpp</locationURI>
+		</link>
+		<link>
 			<name>modules/inc/Wire.hpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/inc/Wire.hpp</locationURI>
