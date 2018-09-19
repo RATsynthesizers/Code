@@ -15,21 +15,19 @@ Generator::Generator(const uint32_t& amp_, const uint32_t& freq_,
 	/*: amplification(amp), frequency(freq), offset(offst), wavePhase(0) */{
 	moduleType = ModuleType::GENERATOR;
 
-	prm[G_f  ].paramType = Parameter::ParamName::FREQUENCY;    // ?P
+	prm[G_f  ].paramType = Parameter::ParamName::FREQUENCY;       // ?P
 	prm[G_a  ].paramType = Parameter::ParamName::AMPLIFICATION;
 	prm[G_ofs].paramType = Parameter::ParamName::OFFSET;
 	prm[G_w  ].paramType = Parameter::ParamName::WAVEFORM;
 
-	prm[0].value = freq_;                                     // ?P
-	prm[1].value = amp_;
-	prm[2].value = offset_;
-
-
+	prm[G_f  ].value = freq_;                                     // ?P
+	prm[G_a  ].value = amp_;
+	prm[G_ofs].value = offset_;
+	prm[G_w  ].value = 0;
+    // init socketbit and iBptr of each parameter
 	for(uint32_t i = 0; i < static_cast<uint32_t>(Params::Number); i++) {
 		prm[i].socketbit = 0;
-		prm[i].value = 0;
-
-		for(uint32_t j = 0; j < ::SOCKETS; prm[i].inputBufferPointer[j] = nullptr, j++);
+		for(uint32_t j = 0; j < ::SOCKETS; prm[i].iBptr[j] = nullptr, j++);
 	};
 
 	instance++;

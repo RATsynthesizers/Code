@@ -19,7 +19,7 @@ struct Parameter
 	};
 
 	uint32_t  value;
-	c_u32_ptr inputBufferPointer[::SOCKETS];
+	c_u32_ptr iBptr[::SOCKETS];
 	uint32_t  socketbit;
 	ParamName paramType;
 

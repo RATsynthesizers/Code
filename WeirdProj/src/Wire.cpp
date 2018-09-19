@@ -80,7 +80,7 @@ void Wire::replugProvider(Module& src_) {
 	source->connectedWires++;
 	switch (destination->getModuleType()) {
 	case Module::ModuleType::GENERATOR: {                                  // ?M
-		dynamic_cast<Generator&>(*destination).prm[realParamNum].inputBufferPointer[bufferNumber] =
+		dynamic_cast<Generator&>(*destination).prm[realParamNum].iBptr[bufferNumber] =
 				source->getOutputBufferPointer();
 
 	};
@@ -105,7 +105,7 @@ void Wire::plug(Parameter::ParamName param_) {
 					socketNumber++;
 				};
 
-				dynamic_cast<Generator&>(*destination).prm[realParamNum].inputBufferPointer[socketNumber] =
+				dynamic_cast<Generator&>(*destination).prm[realParamNum].iBptr[socketNumber] =
 						source->getOutputBufferPointer();
 
 				dynamic_cast<Generator&>(*destination).prm[realParamNum].socketbit |=
