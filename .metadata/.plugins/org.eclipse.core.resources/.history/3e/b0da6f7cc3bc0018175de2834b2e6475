@@ -25,7 +25,7 @@ uint32_t Amp::getInstance() {
 };
 
 void Amp::process() {
-	for(uint32_t buf_cnt =0; buf_cnt < GlobalParameters::BLOCKSIZE; buf_cnt++) {
+	for(uint32_t buf_cnt =0; buf_cnt < BLOCKSIZE; buf_cnt++) {
 	//outputBuffer[buf_cnt] = (amp + *(ampBufferPointer + buf_cnt) * (*(inputBufferPointer[0] + buf_cnt));
 	}
 };

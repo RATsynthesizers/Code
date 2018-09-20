@@ -91,7 +91,6 @@ int main(void)
 	Generator g2(1,440,0);
 	w1.replugConsumer(g2, Parameter::ParamName::AMPLIFICATION);
 	w1.replugProvider(a2);
-
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
