@@ -8,8 +8,8 @@ git add <filename>   - add file to commit
 git add .         - add all files in curr dir to to commit 
 git commit -m "<some text>"   - commit changes
 git status     - check status for added files
-git remote push <remote name> <branch name>   - push to remote repo
-git remote pull <remote name> <branch name>   - pull from remote repo
+git push <remote name> <branch name>   - push to remote repo
+git pull <remote name> <branch name>   - pull from remote repo
 
 
 ==============================================================================
