@@ -12,7 +12,8 @@ git add <dir name>   - add this dir and all files which are
                        located inside this dir (recursively)
 git add .            - add ALL files to commit
 
-git commit -m "<some text>"                 - commit changes
+git commit -m "<some text>"                 - commit changes in all added files
+git commit -m "<some text>" <filename>      - commit changes to specific file
 git status           - check status for added files
 
 git push <remote name> <branch name>        - push to remote repo
