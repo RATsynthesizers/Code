@@ -1,15 +1,87 @@
 ﻿==============================================================================
 -----------------------------------G I T--------------------------------------
 ==============================================================================
-git init      - init git in curr dir
-git remote     - view list of remote repos
+git init             - init git in curr dir
+
+git remote           - view list of remote repos
 git remote add <remote name> <remote url>   - add new remote repo 
+
 git add <filename>   - add file to commit
-git add .         - add all files in curr dir to to commit 
-git commit -m "<some text>"   - commit changes
-git status     - check status for added files
-git push <remote name> <branch name>   - push to remote repo
-git pull <remote name> <branch name>   - pull from remote repo
+git add *            - add all files in curr dir to commit (no recurs)
+git add <dir name>   - add this dir and all files which are 
+                       located inside this dir recursively
+git add .            - add ALL files to commit
+
+git rm <filename>    - remove file from commit
+git rm .             - remove all files from commit 
+
+git commit -m "<some text>"                 - commit changes
+git status           - check status for added files
+
+git push <remote name> <branch name>        - push to remote repo
+git pull <remote name> <branch name>        - pull from remote repo
+
+git branch <branch name>     - create new branch
+git checkout <branch name>   - switch to another branch
+
+
+==============================================================================
+----------------------S Y S T E M   W O R K B E N C H-------------------------
+==============================================================================
+*С++ проект и CubeMX:
+  > Создаётся проект в CubeMX, генерится проект для SW4STM32;
+  > Правый клик по проекту в дереве проекта -> convert to C++;
+  > Если вместо convert to C++ появилось convert to C - конвертация прошла успешно;
+  > main.c -> main.cpp;
+  > Перед регеном в CubeMX переименовать обратно main.cpp -> main.c;
+  > Все #include .hpp подключаются только в main.cpp, не в main.h;
+  
+*Добавление ссылок на сурсы из другого проекта:
+  > Project->Properties->C/C++Buld->Settings->Includes - прописать относительно директории проекта
+    в формате ../../OtherProjDir
+   proj_folder^  ^parent_folder
+  > Создать в дереве проекта Source folder, в нём обычные папки src и inc (опционально);
+  > перетащить файлы из проводника, и указать create links относительно PROJECT_LOC
+	ИЛИ
+    src->Import->FileSystem, Advanced->Create links, relative to PROJECT_LOC, 
+    указать путь и выбрать сурсы
+  
+*Скачивание и запуск проекта с репы:
+  > В консоли GitBash при помощи команды cd идём в желаемое место
+  > Делаем git clone https://github.com/RATsynthesizers/Code;
+  > Открываем проект WinProj или WeirdProj, указываем workspace в папке Code;
+  > Пробуем билдить. Может так случиться, что при билде исчезнет папка modules, 
+    в которой хранятся ссылки .cpp и .hpp наших модулей, и он будет ругаться на 
+    ненайденные сурсы. Тогда просто создаём новый Source Folder с названием modules,
+    внутри две обычные папки inc и src, и в них перетаскиваем сурсы модулей 
+    из WeirdProj (см. раздел *Добавление ссылок на сурсы из другого проекта)
+
+*Обновление кода и коммиты:
+  > добавляем git remote add <remote name> <remote url>,
+    т.е. например git remote add cod https://github.com/RATsynthesizers/Code
+    теперь cod - это наш удалённый репозиторий с кодом;
+  > Вместо добавления всех файлов командой git add . лучше пройти в папку с сурсами
+    и сделать там git add конкретных файлов, которые были изменены; 
+  > В идеале надо делать отдельный коммит для каждого файла, чтобы было легче понять 
+    по названию коммита, какие изменения произошли. т.е. для отдельного файла делаем 
+    git add <filename>, а потом git commit -m <название коммита>
+  > после всех коммитов можно залить изменения на репу командой 
+    git push cod master (или в другую ветку)
+
+*Фиксы: 
+  > Для Dynamic cast-ов: Project->Properties->C/C++Buld->Settings->G++ Compiler->Miscellaneous->uncheck "Disable generation of information about every class with virtual functions (-fno-rtti)";
+  > Для F4 - software reset, при багах перезагрузить вендовс;
+
+
+
+==============================================================================
+---------------------------------Т Е Г И--------------------------------------
+==============================================================================
+??    - обратить внимание
+todo  - на будущее 
+?M    - изменить при добавлении нового модуля
+?P    - изменить при добавлении нового параметра
+
 
 
 ==============================================================================
@@ -83,36 +155,3 @@ typedef const uint8_t* c_u8ptr; // аналогично для uint16_t и uint3
 
 
 
-==============================================================================
-----------------------S Y S T E M   W O R K B E N C H-------------------------
-==============================================================================
-*С++ проект и CubeMX:
-  > Создаётся проект в CubeMX, генерится проект для SW4STM32;
-  > Правый клик по проекту в дереве проекта -> convert to C++;
-  > Если вместо convert to C++ появилось convert to C - конвертация прошла успешно;
-  > main.c -> main.cpp;
-  > Перед регеном в CubeMX переименовать обратно main.cpp -> main.c;
-  > Все #include .hpp подключаются только в main.cpp, не в main.h;
-  
-*Добавление ссылок на сурсы в проект:
-  > Project->Properties->C/C++Buld->Settings->Includes - прописать относительно директории проекта
-    в формате ../../OtherProjDir
-   proj_folder^  ^parent_folder
-  > Создать в дереве проекта Source folder, в нём обычные папки src и (inc опционально);
-  > src->Import->FileSystem, Advanced->Create links, relative to PROJECT_LOC, 
-    указать путь и выбрать сурсы
-
-*Фиксы: 
-  > Для Dynamic cast-ов: Project->Properties->C/C++Buld->Settings->G++ Compiler->Miscellaneous->uncheck "Disable generation of information about every class with virtual functions (-fno-rtti)";
-  > Для F4 - software reset, при багах перезагрузить вендовс;
-
-
-
-
-==================================================с============================
----------------------------------Т Е Г И--------------------------------------
-==============================================================================
-??    - обратить внимание
-todo  - на будущее 
-?M    - изменить при добавлении нового модуля
-?P    - изменить при добавлении нового параметра
