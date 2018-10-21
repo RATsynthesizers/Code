@@ -3684,3 +3684,6 @@ arm-none-eabi-size "WinProj.elf"
    text	   data	    bss	    dec	    hex	filename
    6124	    124	   1588	   7836	   1e9c	WinProj.elf
  
+14:12:27 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+make: Nothing to be done for 'all'.
