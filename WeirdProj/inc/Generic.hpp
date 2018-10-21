@@ -5,7 +5,7 @@
  *      Author: wetfloor
  */
 
-#ifndef GENERIC_HPP_
+#ifndef GENERIC_HPP_  // ??
 #define GENERIC_HPP_
 
 #include <Generator.hpp>

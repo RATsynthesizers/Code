@@ -42,17 +42,17 @@
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
-//=========================================================
-// значени€ тегов с "?" наход€тс€ в ./WeirdProj/words.txt
-//=========================================================
+//=====================================================================
+// explanations for tags with "?" are located in ./WeirdProj/words.txt
+//=====================================================================
 #include <stdio.h>
 #include <stdlib.h>
-//#include "arm_math.h"      ?? дефайны математики и FPU
+//#include "arm_math.h"      ?? math and FPU defines
 #include <math.h>
 
-#include <Globals.hpp>
-#include <Generic.hpp>
-#include <Modules.hpp>
+#include <Globals.hpp>       // some global parameters
+#include <Generic.hpp>       // ??
+#include <Modules.hpp>       // all modules includes
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -87,6 +87,7 @@ int main(void)
 	Generator g1(1,440,0);
 	Amp a1(1);
 	Wire w1(a1, g1, Parameter::ParamName::AMPLIFICATION);
+
 	Amp a2(1);
 	Generator g2(1,440,0);
 	w1.replugConsumer(g2, Parameter::ParamName::AMPLIFICATION);

@@ -1,6 +1,67 @@
-14:12:27 **** Incremental Build of configuration Debug for project WinProj ****
+18:17:37 **** Incremental Build of configuration Debug for project WinProj ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/Wire.d" -MT"modules/src/Wire.o" -o "modules/src/Wire.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp"
+In file included from D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:8:0:
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp: In constructor 'Wire::Wire(Module&, Module&, Parameter::ParamName)':
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:32:10: warning: 'Wire::source' will be initialized after [-Wreorder]
+  Module *source;                    // source module (provider)
+          ^~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:31:10: warning:   'Module* Wire::destination' [-Wreorder]
+  Module *destination;               // destination module (consumer)
+          ^~~~~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:10:1: warning:   when initialized here [-Wreorder]
+ Wire::Wire(Module& src_, Module& dst_, Parameter::ParamName param_) :
+ ^~~~
+In file included from D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:8:0:
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:31:10: warning: 'Wire::destination' will be initialized after [-Wreorder]
+  Module *destination;               // destination module (consumer)
+          ^~~~~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:28:11: warning:   'uint32_t Wire::paramSocket' [-Wreorder]
+  uint32_t paramSocket;              // wire is connected to this parameter's socket
+           ^~~~~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:10:1: warning:   when initialized here [-Wreorder]
+ Wire::Wire(Module& src_, Module& dst_, Parameter::ParamName param_) :
+ ^~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp: In member function 'void Wire::replugProvider(Module&)':
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:84:9: warning: enumeration value 'NOT_INITIALIZED' not handled in switch [-Wswitch]
+  switch (destination->getModuleType()) {       // depending on the destination module type, connect new source's outBuf to destination's parameter's socket
+         ^
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:84:9: warning: enumeration value 'AMPLIFIER' not handled in switch [-Wswitch]
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp: In member function 'void Wire::plug(Parameter::ParamName)':
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:94:9: warning: enumeration value 'NOT_INITIALIZED' not handled in switch [-Wswitch]
+  switch (destination->getModuleType()) {
+         ^
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:94:9: warning: enumeration value 'AMPLIFIER' not handled in switch [-Wswitch]
+Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp
+ 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:162:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);             // ?? warning
+                                      ^
+../Src/main.cpp:176:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Finished building target: WinProj.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "WinProj.elf" "WinProj.hex"
+arm-none-eabi-size "WinProj.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6124	    124	   1588	   7836	   1e9c	WinProj.elf
+ 
 
-14:12:29 Build Finished (took 1s.626ms)
+18:17:48 Build Finished (took 10s.210ms)
 

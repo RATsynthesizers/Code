@@ -44,12 +44,9 @@
 /* Includes ------------------------------------------------------------------*/
 
 /* USER CODE BEGIN Includes */
-#include <stdio.h>
-#include <stdlib.h>
-//#include "arm_math.h"
-#include <math.h>
 
-//#include <Globals.hpp>
+
+
 /* USER CODE END Includes */
 
 /* Private define ------------------------------------------------------------*/

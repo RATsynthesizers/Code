@@ -11,17 +11,16 @@ uint32_t Generator::instance = 0;
 //const uint32_t Generator::numberOfParameters = 4;
 
 Generator::Generator(const uint32_t& amp_, const uint32_t& freq_,
-		const uint32_t& offset_)
-	/*: amplification(amp), frequency(freq), offset(offst), wavePhase(0) */{
+		const uint32_t& offset_) {
 	moduleType = ModuleType::GENERATOR;
 
 	prm[G_f  ].paramType = Parameter::ParamName::FREQUENCY;       // ?P
-	prm[G_a  ].paramType = Parameter::ParamName::AMPLIFICATION;
+	prm[G_a  ].paramType = Parameter::ParamName::AMPLIFICATION;   // fill parameter array: types
 	prm[G_ofs].paramType = Parameter::ParamName::OFFSET;
 	prm[G_w  ].paramType = Parameter::ParamName::WAVEFORM;
 
 	prm[G_f  ].value = freq_;                                     // ?P
-	prm[G_a  ].value = amp_;
+	prm[G_a  ].value = amp_;                                      // fill parameter array: initial values
 	prm[G_ofs].value = offset_;
 	prm[G_w  ].value = 0;
     // init socketbit and iBptr of each parameter
@@ -61,7 +60,9 @@ uint32_t Generator::getInstance() {
 	return instance;
 };
 
-void Generator::process() {
+void Generator::process() {     // write your generator here)
+
+	// shit
 	/*for(uint32_t buf_cnt = 0; buf_cnt < ::SAMPLES_IN_BLOCK; buf_cnt++) {
 		if(wavePhase == frequency)
 			wavePhase = 0;
@@ -79,6 +80,6 @@ void Generator::process() {
 //	}
 //	buf[buf_cnt] = calculate(wave_cnt)
 // wave_cnt++;
-//}   дима
+//}
 
 };

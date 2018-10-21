@@ -9,6 +9,8 @@
 #define GLOBALS_HPP_
 
 #include "stm32f4xx.h"
+#include "DWT.h"       // for speed measurements
+
 using u32_ptr = uint32_t*;
 using c_u32_ptr = const uint32_t*;
 

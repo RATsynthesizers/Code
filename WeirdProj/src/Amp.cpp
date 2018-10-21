@@ -5,6 +5,9 @@
  *      Author: wetfloor
  */
 
+//  (((( NOT DONE YET ))))
+// TODO: make normal amp with big buffer
+
 #include <Amp.hpp>
 
 uint32_t Amp::instance = 0;

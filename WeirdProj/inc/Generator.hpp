@@ -5,13 +5,17 @@
  *      Author: wetfloor
  */
 
+//==============================================
+//-------------- Generator Class ---------------
+//==============================================
+
 #ifndef GENERATOR_HPP_
 #define GENERATOR_HPP_
 
 #include <Module.hpp>
 #include "stm32f4xx.h"
 
-#define G_f   0     // ?P
+#define G_f   0     // ?P  // shortcuts for parameters indexes
 #define G_a   1
 #define G_ofs 2
 #define G_w   3
@@ -19,9 +23,9 @@
 class Generator: public Module {
 public:
 
-	enum class Params {
+	enum class Params {  // number of parameters in this module
 		Number = 4       // ?P
-	};
+	};                   // ?? why class?
 
 	//const static uint32_t numberOfParameters;
 
@@ -29,14 +33,14 @@ public:
 
 	static uint32_t getInstance();
 
-	void process();
+	void process();       // generation function
 
-	Parameter prm[static_cast<uint32_t>(Params::Number)];
+	Parameter prm[static_cast<uint32_t>(Params::Number)];  // array of parameters
 private:
 	Generator();
-	Generator(const Generator& in);
+	Generator(const Generator& in);  // ??
 
-	static uint32_t instance;
+	static uint32_t instance;            // generator's instance
 
 };
 
