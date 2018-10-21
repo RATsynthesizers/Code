@@ -9,11 +9,11 @@ git remote add <remote name> <remote url>   - add new remote repo
 git add <filename>   - add file to commit
 git add *            - add all files in curr dir to commit (no recurs)
 git add <dir name>   - add this dir and all files which are 
-                       located inside this dir recursively
+                       located inside this dir (recursively)
 git add .            - add ALL files to commit
 
-git rm --cached <filename>    - remove file from commit (untrack)
-git rm --cached . -r          - remove ALL files from commit (untrack) 
+git rm --cached <filename>   - remove file from commit (untrack)
+git rm --cached . -r         - remove ALL files from commit (untrack, recurs) 
 
 git commit -m "<some text>"                 - commit changes
 git status           - check status for added files
