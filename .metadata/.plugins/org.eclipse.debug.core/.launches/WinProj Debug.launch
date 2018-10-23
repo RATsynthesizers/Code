@@ -2,7 +2,7 @@
 <launchConfiguration type="fr.ac6.mcu.debug.config.launchConfigurationType">
 <stringAttribute key="DEBBUGER_BOARD_NAME" value="WinProj"/>
 <stringAttribute key="DEBBUGER_MCU_NAME" value="STM32F407VGTx"/>
-<stringAttribute key="fr.ac6.mcu.debug.launch.debuggerTab.STLINK" value="53FF6E065087545453460387"/>
+<stringAttribute key="fr.ac6.mcu.debug.launch.debuggerTab.STLINK" value="066FFF535353897167072343"/>
 <stringAttribute key="fr.ac6.mcu.ide.DBG_DEVICE" value="ST-Link"/>
 <stringAttribute key="fr.ac6.mcu.ide.DBG_DEVICE_SHAREABLE_ALLOWED" value="true"/>
 <stringAttribute key="fr.ac6.mcu.ide.DBG_INTERFACE" value="SWD"/>

@@ -42,6 +42,7 @@
 #define __MAIN_H__
 
 /* Includes ------------------------------------------------------------------*/
+#include "stm32f4xx_hal.h"
 
 /* USER CODE BEGIN Includes */
 
@@ -50,6 +51,9 @@
 /* USER CODE END Includes */
 
 /* Private define ------------------------------------------------------------*/
+
+#define CODEC_RESET_Pin GPIO_PIN_11
+#define CODEC_RESET_GPIO_Port GPIOA
 
 /* ########################## Assert Selection ############################## */
 /**

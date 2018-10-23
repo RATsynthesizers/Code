@@ -32,6 +32,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/src/Module.cpp</locationURI>
 		</link>
 		<link>
+			<name>Drivers/CodecDriver/CodecDriver.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/src/CodecDriver.cpp</locationURI>
+		</link>
+		<link>
+			<name>Drivers/CodecDriver/CodecDriver.hpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/inc/CodecDriver.hpp</locationURI>
+		</link>
+		<link>
 			<name>modules/inc/Amp.hpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/inc/Amp.hpp</locationURI>

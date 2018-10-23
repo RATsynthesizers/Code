@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;WinProj/Drivers/codec_driver&apos; to &apos;CodecDriver&apos;" description="Rename resource &apos;codec_driver&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Drivers/codec_driver" name="CodecDriver" stamp="1540288181184" updateReferences="true"/>
+</session>

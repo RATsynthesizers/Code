@@ -1,0 +1,146 @@
+/*
+ * CodecDriver.hpp
+ *
+ *  Created on: 20 окт. 2018 г.
+ *      Author: maro4_000
+ */
+
+#ifndef CODECDRIVER_HPP_
+#define CODECDRIVER_HPP_
+
+#include <main.h>
+
+#define CODEC_ADDR_DEFAULT (1 << 5)
+
+#define CODEC_MEMADD_SIZE  8
+
+#define Mode_Control_1     0x01
+
+#define M1                 (1<<0)
+#define M0                 (1<<1)
+#define Ratio1             (1<<2)
+#define Ratio0             (1<<3)
+#define M_S                (1<<4)
+#define DAC_DIF2           (1<<5)
+#define DAC_DIF1           (1<<6)
+#define DAC_DIF0           (1<<7)
+
+
+//--------------------------------
+#define DAC_Control        0x02
+
+#define AMUTE              (1<<0)
+#define FILT_SEL           (1<<1)
+#define DEM1               (1<<2)
+#define DEM0               (1<<3)
+#define RMP_UP             (1<<4)
+#define RMP_DN             (1<<5)
+#define INV_B              (1<<6)
+#define INV_A              (1<<7)
+
+
+//--------------------------------
+#define DAC_Vol_Mix_Ctrl   0x03
+
+
+#define B_EQUALS_A         (1<<1)
+#define Soft               (1<<2)
+#define ZeroCross          (1<<3)
+#define ATAPI3             (1<<4)
+#define ATAPI2             (1<<5)
+#define ATAPI1             (1<<6)
+#define ATAPI0             (1<<7)
+
+
+//--------------------------------
+#define DAC_Ch_A_Vol_Ctrl  0x04
+
+#define MUTE               (1<<0)
+#define VOL6               (1<<1)
+#define VOL5               (1<<2)
+#define VOL4               (1<<3)
+#define VOL3               (1<<4)
+#define VOL2               (1<<5)
+#define VOL1               (1<<6)
+#define VOL0               (1<<7)
+
+
+//--------------------------------
+#define DAC_Ch_B_Vol_Ctrl  0x05
+
+#define MUTE               (1<<0)
+#define VOL6               (1<<1)
+#define VOL5               (1<<2)
+#define VOL4               (1<<3)
+#define VOL3               (1<<4)
+#define VOL2               (1<<5)
+#define VOL1               (1<<6)
+#define VOL0               (1<<7)
+
+
+//--------------------------------
+#define ADC_Ctrl           0x06
+
+
+#define Dither16           (1<<2)
+#define ADC_DIF0           (1<<3)
+#define MUTEA              (1<<4)
+#define MUTEB              (1<<5)
+#define HPFDisableA        (1<<6)
+#define HPFDisableB        (1<<7)
+
+
+//--------------------------------
+#define Mode_Ctrl_2        0x07
+
+#define CTRL_PORT_MODE_EN  (0x03)
+#define LOOP               (1<<3)
+#define MUTECA_EQUALS_B    (1<<4)
+#define FREEZE             (1<<5)
+#define CPEN               (1<<6)
+#define PDN                (1<<7)
+
+
+//--------------------------------
+#define Chip_ID            0x08
+
+#define PART3              (1<<0)
+#define PART2              (1<<1)
+#define PART1              (1<<2)
+#define PART0              (1<<3)
+#define REV3               (1<<4)
+#define REV2               (1<<5)
+#define REV1               (1<<6)
+#define REV0               (1<<7)
+
+
+/*
+ * This class contains desired codec configuration and required init function.
+ * Any codec configuration may be chosen by writing specific values
+ * in codec registers.
+ */
+class CodecDriver {
+public:
+	CodecDriver(const I2C_HandleTypeDef& instance_, const uint8_t hwAddress_)
+			: instance(instance_), codecAddress( CODEC_ADDR_DEFAULT | (hwAddress_ << 1) ) {};
+
+	void initCodec(void);
+
+	void resetCodec(void);
+private:
+	//Number of codec registers
+	static const uint8_t numOfRegisters = 7;
+
+	//Array of values of codec registers
+	static const uint8_t config[numOfRegisters];
+
+	//I2C identifier
+	const I2C_HandleTypeDef& instance;
+
+	//Codec i2c address
+	const uint8_t codecAddress;
+};
+
+
+
+#endif /* CODECDRIVER_HPP_ */
