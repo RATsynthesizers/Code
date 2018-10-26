@@ -1,0 +1,24 @@
+Sub nth_row_to_next_column()
+' comment
+
+Dim i As Integer, j As Integer, cur_column As Integer, new_row As Integer, height As Integer
+
+cur_column = 1
+num_of_cols = 8
+height = 2000
+
+new_row = 1
+For i = 0 To height
+    For j = (cur_column + 1) To (cur_column + num_of_cols + 1)
+    i = i + 1
+        Cells(new_row, j).Value = Cells(i, cur_column).Value
+    Next j
+    new_row = new_row + 1
+    i = i - 1
+Next i
+
+'
+    Application.Goto Reference:="nth_row_to_next_column"
+    ActiveWorkbook.Save
+
+End Sub
