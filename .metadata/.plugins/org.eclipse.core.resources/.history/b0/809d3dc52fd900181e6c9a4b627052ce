@@ -55,7 +55,7 @@
 #include <math.h>
 
 #include <Globals.hpp>       // some global parameters
-#include <Generic.hpp>       // ?? like voice
+#include <Generic.hpp>       // ??
 #include <Modules.hpp>       // all modules includes
 
 #include "CodecDriver.hpp"
