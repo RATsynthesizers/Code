@@ -178,4 +178,35 @@ float sin_1000_smp[SIN_1000_SMP_SZ] = {
 };
 
 
+//void packForCodec(float *flo_, uint32_t size_, uint16_t *outBuf_, uint8_t samples_) {
+//	uint16_t next;
+//	switch (samples_) {
+//	case 16:
+//		for(uint32_t i = 0; i < size_; i++) {
+//			if(i != size_) {
+//				next = (uint16_t) ( (flo_[i+1] + 1)/2 * 0xFFFF );
+//				outBuf_[i] = (uint16_t) ( (( (flo_[i] + 1)/2 * 0xFFFF ) << 16) | ( next  >> 16 ) );
+//			} else 	outBuf_[i] = (uint16_t) ( (( (flo_[i] + 1)/2 * 0xFFFF ) << 16) );
+//		}
+//	break;
+//	case 24:
+//		for(uint32_t i = 0; i < size_; i++) {
+//					if(i != size_) {
+//						next = (uint32_t) ( (flo_[i+1] + 1)/2 * 0xFFFF );
+//						outBuf_[i] = (uint32_t) ( (( (flo_[i] + 1)/2 * 0xFFFF ) << 8) | ( next  >> 24 ) );
+//					} else 	outBuf_[i] = (uint32_t) ( (( (flo_[i] + 1)/2 * 0xFFFF ) << 8) );
+//				}
+//
+//		break;
+//	}
+//}
+
+void packForCodec(float *flo_, uint32_t size_, uint16_t *outBuf_) {
+	uint32_t temp;
+	for(uint32_t i = 0; i < size_*2; i+=2) {
+		temp = (uint32_t) ( (flo_[i] + 1)/2 * 0xFFFF );
+		outBuf_[i] = (temp) << 16;
+		outBuf_[i+1] = (temp) & 0xFFFF;
+	}
+}
 

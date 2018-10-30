@@ -1,24 +1,10 @@
-18:53:00 **** Incremental Build of configuration Debug for project WinProj ****
+23:19:04 **** Incremental Build of configuration Debug for project WinProj ****
 make all 
-Building file: ../Src/main.cpp
-Invoking: MCU G++ Compiler
+Building file: ../Src/stm32f4xx_it.c
+Invoking: MCU GCC Compiler
 D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
-../Src/main.cpp: In function 'int main()':
-../Src/main.cpp:146:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
-    volatile uint8_t o = (SPI2->DR);
-                     ^
-../Src/main.cpp: In function 'void SystemClock_Config()':
-../Src/main.cpp:183:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     _Error_Handler(__FILE__, __LINE__);
-                                      ^
-../Src/main.cpp:197:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     _Error_Handler(__FILE__, __LINE__);
-                                      ^
-../Src/main.cpp:205:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     _Error_Handler(__FILE__, __LINE__);
-                                      ^
-Finished building: ../Src/main.cpp
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" -o "Src/stm32f4xx_it.o" "../Src/stm32f4xx_it.c"
+Finished building: ../Src/stm32f4xx_it.c
  
 Building target: WinProj.elf
 Invoking: MCU G++ Linker
@@ -30,8 +16,8 @@ Generating hex and Printing size information:
 arm-none-eabi-objcopy -O ihex "WinProj.elf" "WinProj.hex"
 arm-none-eabi-size "WinProj.elf"
    text	   data	    bss	    dec	    hex	filename
-  13528	    124	   1908	  15560	   3cc8	WinProj.elf
+  19564	    124	   1916	  21604	   5464	WinProj.elf
  
 
-18:53:09 Build Finished (took 9s.723ms)
+23:19:14 Build Finished (took 9s.629ms)
 

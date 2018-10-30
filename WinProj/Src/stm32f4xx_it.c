@@ -215,12 +215,12 @@ void DMA1_Stream4_IRQHandler(void)
 void TIM2_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM2_IRQn 0 */
-	HAL_NVIC_ClearPendingIRQ(TIM2_IRQn); // ??
+	//HAL_NVIC_ClearPendingIRQ(TIM2_IRQn); // ??
 
   /* USER CODE END TIM2_IRQn 0 */
   HAL_TIM_IRQHandler(&htim2);
   /* USER CODE BEGIN TIM2_IRQn 1 */
-  HAL_I2S_Transmit_DMA(&hi2s2, buf, 2); // ?i2s
+  HAL_I2S_Transmit_DMA(&hi2s2, buf, 3); // ?i2s
 
   /* USER CODE END TIM2_IRQn 1 */
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>WinProj</name>
-	<comment></comment>
+	<comment />
 	<projects>
 	</projects>
 	<buildSpec>
@@ -29,77 +29,77 @@
 		<link>
 			<name>Module.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/src/Module.cpp</locationURI>
-		</link>
-		<link>
-			<name>Drivers/CodecDriver/CodecDriver.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/src/CodecDriver.cpp</locationURI>
-		</link>
-		<link>
-			<name>Drivers/CodecDriver/CodecDriver.hpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/inc/CodecDriver.hpp</locationURI>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/src/Module.cpp</location>
 		</link>
 		<link>
 			<name>modules/inc/Amp.hpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/inc/Amp.hpp</locationURI>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/inc/Amp.hpp</location>
+		</link>
+		<link>
+			<name>modules/inc/CodecDriver.hpp</name>
+			<type>1</type>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/inc/CodecDriver.hpp</location>
 		</link>
 		<link>
 			<name>modules/inc/Generator.hpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/inc/Generator.hpp</locationURI>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/inc/Generator.hpp</location>
 		</link>
 		<link>
 			<name>modules/inc/Generic.hpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/inc/Generic.hpp</locationURI>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/inc/Generic.hpp</location>
 		</link>
 		<link>
 			<name>modules/inc/Globals.hpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/inc/Globals.hpp</locationURI>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/inc/Globals.hpp</location>
 		</link>
 		<link>
 			<name>modules/inc/Module.hpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/inc/Module.hpp</locationURI>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/inc/Module.hpp</location>
 		</link>
 		<link>
 			<name>modules/inc/Modules.hpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/inc/Modules.hpp</locationURI>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/inc/Modules.hpp</location>
 		</link>
 		<link>
 			<name>modules/inc/Wire.hpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/inc/Wire.hpp</locationURI>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/inc/Wire.hpp</location>
 		</link>
 		<link>
 			<name>modules/src/Amp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/src/Amp.cpp</locationURI>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/src/Amp.cpp</location>
+		</link>
+		<link>
+			<name>modules/src/CodecDriver.cpp</name>
+			<type>1</type>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/src/CodecDriver.cpp</location>
 		</link>
 		<link>
 			<name>modules/src/Generator.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/src/Generator.cpp</locationURI>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/src/Generator.cpp</location>
 		</link>
 		<link>
 			<name>modules/src/Generic.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/src/Generic.cpp</locationURI>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/src/Generic.cpp</location>
 		</link>
 		<link>
 			<name>modules/src/Module.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/src/Module.cpp</locationURI>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/src/Module.cpp</location>
 		</link>
 		<link>
 			<name>modules/src/Wire.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/WeirdProj/src/Wire.cpp</locationURI>
+			<location>PARENT-1-PROJECT_LOC/WeirdProj/src/Wire.cpp</location>
 		</link>
 	</linkedResources>
 </projectDescription>

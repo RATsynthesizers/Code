@@ -58,14 +58,14 @@
 #include <Generic.hpp>       // ?? like voice
 #include <Modules.hpp>       // all modules includes
 
-#include "CodecDriver.hpp"
+#include <CodecDriver.hpp>
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-uint16_t buf[2];    // ?i2s
+uint16_t buf[3];    // ?i2s
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -110,7 +110,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+  __disable_irq();
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -128,9 +128,10 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   Codec1.initCodec();
-__disable_irq();
-  buf[0] = 0xFF; // ?i2s
-  buf[1] = 0x0F; // ?i2s
+
+  buf[0] = 0xFFF9; // ?i2s
+  buf[1] = 0x7FFF; // ?i2s
+  buf[2] = 0x380;  // ?i2s
   HAL_TIM_Base_Start_IT(&htim2);  // ?i2s
   __enable_irq();
   /* USER CODE END 2 */
