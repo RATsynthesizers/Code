@@ -5,6 +5,8 @@
  *      Author: Roman
  */
 
+
+// temporary file for test sin generation
 #ifndef INC_TABLES_H_
 #define INC_TABLES_H_
 

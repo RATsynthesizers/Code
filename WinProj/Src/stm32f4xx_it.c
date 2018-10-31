@@ -36,7 +36,7 @@
 #include "stm32f4xx_it.h"
 
 /* USER CODE BEGIN 0 */
-extern uint16_t buf[2];   // ?i2s
+extern uint16_t buf[3];   // ?i2s
 
 /* USER CODE END 0 */
 

@@ -2,10 +2,11 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Reserved" key="selection"/>
+		<item value="__HAL_I2S_ENABLE_IT" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="__HAL_I2S_ENABLE_IT"/>
 			<item value="reserved"/>
 		</list>
 		<list key="replacehistory">

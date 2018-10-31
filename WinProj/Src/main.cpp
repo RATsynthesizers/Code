@@ -132,7 +132,9 @@ int main(void)
   buf[0] = 0xFFF9; // ?i2s
   buf[1] = 0x7FFF; // ?i2s
   buf[2] = 0x380;  // ?i2s
-  HAL_TIM_Base_Start_IT(&htim2);  // ?i2s
+  //HAL_TIM_Base_Start_IT(&htim2);  // ?i2s
+  HAL_I2S_Transmit_DMA(&hi2s2, buf, 3); // ?i2s
+
   __enable_irq();
   /* USER CODE END 2 */
 
