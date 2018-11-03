@@ -43,6 +43,7 @@
 #include "i2c.h"
 #include "i2s.h"
 #include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
@@ -59,14 +60,18 @@
 #include <Modules.hpp>       // all modules includes
 
 #include <CodecDriver.hpp>
+#include <MIDIparser.hpp>
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
-
+	MIDI::MIDIparser parser;
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-uint16_t buf[3];    // ?i2s
-//#include "tables.h" // ?i2s
+uint8_t buf[3];    // ?i2s
+uint8_t bufCnt = 0;
+uint8_t tempBufUART = 0;
+#include "tables.h" // ?i2s
+
 
 /* USER CODE END PV */
 
@@ -79,7 +84,21 @@ void SystemClock_Config(void);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
+{
+}
 
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+ if(huart->Instance==UART4)
+ {
+
+	 parser.PushByte(tempBufUART);
+
+
+ }
+
+}
 /* USER CODE END 0 */
 
 /**
@@ -102,6 +121,8 @@ int main(void)
 	w1.replugProvider(a2);
 
 	CodecDriver Codec1(hi2c1, 0);
+
+
 
 
   /* USER CODE END 1 */
@@ -128,19 +149,44 @@ int main(void)
   MX_I2C1_Init();
   MX_I2S2_Init();
   MX_TIM2_Init();
+  MX_UART4_Init();
   /* USER CODE BEGIN 2 */
   Codec1.initCodec();
 
-  buf[0] = 0xFFF9; // ?i2s
-  buf[1] = 0x7FFF; // ?i2s
-  buf[2] = 0x380;  // ?i2s
+  buf[0] = 0; // ?i2s
+  buf[1] = 0; // ?i2s
+  buf[2] = 0;  // ?i2s
 
 //  uint16_t outBuff[SIN_1000_SMP_SZ * 2];  // ?i2s
-//  prepareSin(outBuff);
+//  float sin_1000_smp[SIN_1000_SMP_SZ] = {
+//  			 0.00000,     0.00628,     0.01257,     0.01885,     0.02513,
+//  			 0.03769,     0.04397,     0.05024,     0.05652,     0.06279,
+//  			 0.07533,     0.08159,     0.08785,     0.09411,     0.10036,
+//  			 0.11286,     0.11910,     0.12533,     0.13156,     0.13779,
+//  			 0.15023,     0.15643,     0.16264,     0.16883,     0.17502,
+//  			 0.18738,     0.19355,     0.19971,     0.20586,     0.21201,
+//  			 0.22427,     0.23039,     0.23650,     0.24260,     0.24869,
+//  			 0.26084,     0.26690,     0.27295,     0.27899,     0.28502,
+//  			 0.29704,     0.30304,     0.30902,     0.31499,     0.32094,
+//  			 0.33282,     0.33874,     0.34464,     0.35053,     0.35641,
+//  			 0.36812,     0.37396,     0.37978,     0.38558,     0.39137,
+//  			 0.40291,     0.40865,     0.41438,     0.42009,     0.42578,
+//  			 0.43712,     0.44276,     0.44838,     0.45399,     0.45958,
+//  			 0.47070,     0.47624,     0.48175,     0.48725,     0.49273,
+//  			 0.50362,     0.50904,     0.51444,     0.51982,     0.52517,
+//  			 0.53583,     0.54112,     0.54639,     0.55165,     0.55688,
+//  			 0.56727,     0.57243,     0.57757,     0.58269,     0.58779,
+//  			 0.59790,     0.60293,     0.60793,     0.61291,     0.61786,
+//  			 0.62769,     0.63257,     0.63742,     0.64225,     0.64706,
+//  			 0.65659,     0.66131,     0.66601,     0.67069,     0.67533
+//  	};
 
-//  HAL_I2S_Transmit_DMA(&hi2s2, outBuff, SIN_1000_SMP_SZ * 2); // ?i2s
+
+  //HAL_I2S_Transmit_DMA(&hi2s2, packForCodec(sin_1000_smp, static_cast<uint32_t>(100)), 200); // ?i2s
 
   __enable_irq();   // ??
+  __HAL_UART_ENABLE_IT(&huart4, UART_IT_RXNE);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */

@@ -1,0 +1,15 @@
+/*
+ * MIDIparser.cpp
+ *
+ *  Created on: Nov 3, 2018
+ *      Author: Roman
+ */
+
+#include <MIDIparser.hpp>
+
+using namespace MIDI::MIDIparser;
+
+MIDI::MIDIparser::MIDIparser() : running_status_(0),
+		data_size_(0), expected_data_size_(0) {
+
+}

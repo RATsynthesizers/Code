@@ -1,0 +1,18 @@
+/*
+ * MIDIparser.hpp
+ *
+ *  Created on: Nov 3, 2018
+ *      Author: Roman
+ */
+
+#ifndef MIDIPARSER_HPP_
+#define MIDIPARSER_HPP_
+
+class MIDIparser {
+public:
+private:
+};
+
+
+
+#endif /* MIDIPARSER_HPP_ */

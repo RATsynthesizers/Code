@@ -36,14 +36,15 @@
 #include "stm32f4xx_it.h"
 
 /* USER CODE BEGIN 0 */
-extern uint16_t buf[3];   // ?i2s
-
+//extern uint16_t buf[3];   // ?i2s
+extern uint8_t tempBufUART;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
 extern DMA_HandleTypeDef hdma_spi2_tx;
 extern I2S_HandleTypeDef hi2s2;
 extern TIM_HandleTypeDef htim2;
+extern UART_HandleTypeDef huart4;
 
 /******************************************************************************/
 /*            Cortex-M4 Processor Interruption and Exception Handlers         */ 
@@ -220,7 +221,7 @@ void TIM2_IRQHandler(void)
   /* USER CODE END TIM2_IRQn 0 */
   HAL_TIM_IRQHandler(&htim2);
   /* USER CODE BEGIN TIM2_IRQn 1 */
-  HAL_I2S_Transmit_DMA(&hi2s2, buf, 3); // ?i2s
+ // HAL_I2S_Transmit_DMA(&hi2s2, buf, 3); // ?i2s
 
   /* USER CODE END TIM2_IRQn 1 */
 }
@@ -237,6 +238,20 @@ void SPI2_IRQHandler(void)
   /* USER CODE BEGIN SPI2_IRQn 1 */
 
   /* USER CODE END SPI2_IRQn 1 */
+}
+
+/**
+* @brief This function handles UART4 global interrupt.
+*/
+void UART4_IRQHandler(void)
+{
+  /* USER CODE BEGIN UART4_IRQn 0 */
+
+  /* USER CODE END UART4_IRQn 0 */
+  HAL_UART_IRQHandler(&huart4);
+  /* USER CODE BEGIN UART4_IRQn 1 */
+  HAL_UART_Receive_IT(&huart4, &tempBufUART, 1);
+  /* USER CODE END UART4_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

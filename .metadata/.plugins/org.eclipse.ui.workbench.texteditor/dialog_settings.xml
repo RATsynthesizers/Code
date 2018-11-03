@@ -6,6 +6,7 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="HAL_StatusTypeDef HAL_UART_Receive_I"/>
 			<item value="__HAL_I2S_ENABLE_IT"/>
 			<item value="reserved"/>
 		</list>
