@@ -1,247 +1,24 @@
-02:25:48 **** Incremental Build of configuration Debug for project WinProj ****
+18:08:55 **** Incremental Build of configuration Debug for project WinProj ****
 make all 
-Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Amp.cpp
-Invoking: MCU G++ Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/Amp.d" -MT"modules/src/Amp.o" -o "modules/src/Amp.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Amp.cpp"
-Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Amp.cpp
- 
-Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/CodecDriver.cpp
-Invoking: MCU G++ Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/CodecDriver.d" -MT"modules/src/CodecDriver.o" -o "modules/src/CodecDriver.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/CodecDriver.cpp"
-Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/CodecDriver.cpp
- 
-Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generator.cpp
-Invoking: MCU G++ Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/Generator.d" -MT"modules/src/Generator.o" -o "modules/src/Generator.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generator.cpp"
-Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generator.cpp
- 
-Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generic.cpp
-Invoking: MCU G++ Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/Generic.d" -MT"modules/src/Generic.o" -o "modules/src/Generic.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generic.cpp"
-Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generic.cpp
- 
-Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Module.cpp
-Invoking: MCU G++ Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/Module.d" -MT"modules/src/Module.o" -o "modules/src/Module.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Module.cpp"
-Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Module.cpp
- 
-Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp
-Invoking: MCU G++ Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/Wire.d" -MT"modules/src/Wire.o" -o "modules/src/Wire.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp"
-In file included from D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:8:0:
-D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp: In constructor 'Wire::Wire(Module&, Module&, Parameter::ParamName)':
-D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:32:10: warning: 'Wire::source' will be initialized after [-Wreorder]
-  Module *source;                    // source module (provider)
-          ^~~~~~
-D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:31:10: warning:   'Module* Wire::destination' [-Wreorder]
-  Module *destination;               // destination module (consumer)
-          ^~~~~~~~~~~
-D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:10:1: warning:   when initialized here [-Wreorder]
- Wire::Wire(Module& src_, Module& dst_, Parameter::ParamName param_) :
- ^~~~
-In file included from D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:8:0:
-D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:31:10: warning: 'Wire::destination' will be initialized after [-Wreorder]
-  Module *destination;               // destination module (consumer)
-          ^~~~~~~~~~~
-D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:28:11: warning:   'uint32_t Wire::paramSocket' [-Wreorder]
-  uint32_t paramSocket;              // wire is connected to this parameter's socket
-           ^~~~~~~~~~~
-D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:10:1: warning:   when initialized here [-Wreorder]
- Wire::Wire(Module& src_, Module& dst_, Parameter::ParamName param_) :
- ^~~~
-D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp: In member function 'void Wire::replugProvider(Module&)':
-D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:84:9: warning: enumeration value 'NOT_INITIALIZED' not handled in switch [-Wswitch]
-  switch (destination->getModuleType()) {       // depending on the destination module type, connect new source's outBuf to destination's parameter's socket
-         ^
-D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:84:9: warning: enumeration value 'AMPLIFIER' not handled in switch [-Wswitch]
-D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp: In member function 'void Wire::plug(Parameter::ParamName)':
-D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:94:9: warning: enumeration value 'NOT_INITIALIZED' not handled in switch [-Wswitch]
-  switch (destination->getModuleType()) {
-         ^
-D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:94:9: warning: enumeration value 'AMPLIFIER' not handled in switch [-Wswitch]
-Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp
- 
-Building file: ../Src/dma.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/dma.d" -MT"Src/dma.o" -o "Src/dma.o" "../Src/dma.c"
-Finished building: ../Src/dma.c
- 
-Building file: ../Src/gpio.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" -o "Src/gpio.o" "../Src/gpio.c"
-Finished building: ../Src/gpio.c
- 
-Building file: ../Src/i2c.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/i2c.d" -MT"Src/i2c.o" -o "Src/i2c.o" "../Src/i2c.c"
-Finished building: ../Src/i2c.c
- 
-Building file: ../Src/i2s.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/i2s.d" -MT"Src/i2s.o" -o "Src/i2s.o" "../Src/i2s.c"
-Finished building: ../Src/i2s.c
- 
 Building file: ../Src/main.cpp
 Invoking: MCU G++ Compiler
 D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
 arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
 ../Src/main.cpp: In function 'int main()':
-../Src/main.cpp:149:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+../Src/main.cpp:154:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
     volatile uint8_t o = (SPI2->DR);
                      ^
 ../Src/main.cpp: In function 'void SystemClock_Config()':
-../Src/main.cpp:186:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../Src/main.cpp:191:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
      _Error_Handler(__FILE__, __LINE__);
                                       ^
-../Src/main.cpp:200:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../Src/main.cpp:205:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
      _Error_Handler(__FILE__, __LINE__);
                                       ^
-../Src/main.cpp:208:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../Src/main.cpp:213:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
      _Error_Handler(__FILE__, __LINE__);
                                       ^
 Finished building: ../Src/main.cpp
- 
-Building file: ../Src/stm32f4xx_hal_msp.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" -o "Src/stm32f4xx_hal_msp.o" "../Src/stm32f4xx_hal_msp.c"
-Finished building: ../Src/stm32f4xx_hal_msp.c
- 
-Building file: ../Src/stm32f4xx_it.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" -o "Src/stm32f4xx_it.o" "../Src/stm32f4xx_it.c"
-Finished building: ../Src/stm32f4xx_it.c
- 
-Building file: ../Src/system_stm32f4xx.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" -o "Src/system_stm32f4xx.o" "../Src/system_stm32f4xx.c"
-Finished building: ../Src/system_stm32f4xx.c
- 
-Building file: ../Src/tim.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" -o "Src/tim.o" "../Src/tim.c"
-Finished building: ../Src/tim.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
-Invoking: MCU GCC Compiler
-D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
  
 Building target: WinProj.elf
 Invoking: MCU G++ Linker
@@ -253,8 +30,8 @@ Generating hex and Printing size information:
 arm-none-eabi-objcopy -O ihex "WinProj.elf" "WinProj.hex"
 arm-none-eabi-size "WinProj.elf"
    text	   data	    bss	    dec	    hex	filename
-  13256	    124	   1916	  15296	   3bc0	WinProj.elf
+  13240	    124	   1916	  15280	   3bb0	WinProj.elf
  
 
-02:26:33 Build Finished (took 45s.208ms)
+18:09:01 Build Finished (took 6s.354ms)
 

@@ -66,6 +66,8 @@
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
 uint16_t buf[3];    // ?i2s
+//#include "tables.h" // ?i2s
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -110,7 +112,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  __disable_irq();
+  __disable_irq();  // ??
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -132,10 +134,13 @@ int main(void)
   buf[0] = 0xFFF9; // ?i2s
   buf[1] = 0x7FFF; // ?i2s
   buf[2] = 0x380;  // ?i2s
-  //HAL_TIM_Base_Start_IT(&htim2);  // ?i2s
-  HAL_I2S_Transmit_DMA(&hi2s2, buf, 3); // ?i2s
 
-  __enable_irq();
+//  uint16_t outBuff[SIN_1000_SMP_SZ * 2];  // ?i2s
+//  prepareSin(outBuff);
+
+//  HAL_I2S_Transmit_DMA(&hi2s2, outBuff, SIN_1000_SMP_SZ * 2); // ?i2s
+
+  __enable_irq();   // ??
   /* USER CODE END 2 */
 
   /* Infinite loop */

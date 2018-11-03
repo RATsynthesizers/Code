@@ -9307,3 +9307,1612 @@ arm-none-eabi-size "WinProj.elf"
    text	   data	    bss	    dec	    hex	filename
   13256	    124	   1916	  15296	   3bc0	WinProj.elf
  
+15:03:26 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../modules/src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"modules/src/tables.d" -MT"modules/src/tables.o" -o "modules/src/tables.o" "../modules/src/tables.c"
+../modules/src/tables.c: In function 'packForCodec':
+../modules/src/tables.c:194:11: warning: unused variable 'j' [-Wunused-variable]
+  uint32_t j = 0;
+           ^
+Finished building: ../modules/src/tables.c
+ 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp:69:10: fatal error: tables.h: No such file or directory
+ #include "tables.h" // ?i2s
+          ^~~~~~~~~~
+compilation terminated.
+Src/subdir.mk:54: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+15:04:05 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp:69:10: fatal error: tables.h: No such file or directory
+ #include <tables.h> // ?i2s
+          ^~~~~~~~~~
+compilation terminated.
+Src/subdir.mk:54: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+15:04:20 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp:69:10: fatal error: tables.h: No such file or directory
+ #include <tables.h> // ?i2ss
+          ^~~~~~~~~~
+compilation terminated.
+Src/subdir.mk:54: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+15:05:08 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../modules/src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"modules/src/tables.d" -MT"modules/src/tables.o" -o "modules/src/tables.o" "../modules/src/tables.c"
+../modules/src/tables.c: In function 'packForCodec':
+../modules/src/tables.c:194:11: warning: unused variable 'j' [-Wunused-variable]
+  uint32_t j = 0;
+           ^
+Finished building: ../modules/src/tables.c
+ 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp:69:10: fatal error: tables.h: No such file or directory
+ #include <tables.h> // ?i2s
+          ^~~~~~~~~~
+compilation terminated.
+Src/subdir.mk:54: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+15:05:50 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../modules/src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"modules/src/tables.d" -MT"modules/src/tables.o" -o "modules/src/tables.o" "../modules/src/tables.c"
+In file included from ../modules/src/tables.c:10:0:
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc/tables.h:19:32: error: unknown type name 'uint32_t'
+ void packForCodec(float *flo_, uint32_t size_, uint16_t *outBuf_);
+                                ^~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc/tables.h:19:48: error: unknown type name 'uint16_t'
+ void packForCodec(float *flo_, uint32_t size_, uint16_t *outBuf_);
+                                                ^~~~~~~~
+../modules/src/tables.c:12:17: error: unknown type name 'uint16_t'
+ void prepareSin(uint16_t *outBuf) {
+                 ^~~~~~~~
+../modules/src/tables.c:192:31: error: unknown type name 'uint32_t'
+ void packForCodec(float *flo, uint32_t size, uint16_t *outBuf) {
+                               ^~~~~~~~
+../modules/src/tables.c:192:46: error: unknown type name 'uint16_t'
+ void packForCodec(float *flo, uint32_t size, uint16_t *outBuf) {
+                                              ^~~~~~~~
+modules/src/subdir.mk:88: recipe for target 'modules/src/tables.o' failed
+make: *** [modules/src/tables.o] Error 1
+15:05:58 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../modules/src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"modules/src/tables.d" -MT"modules/src/tables.o" -o "modules/src/tables.o" "../modules/src/tables.c"
+../modules/src/tables.c: In function 'packForCodec':
+../modules/src/tables.c:194:11: warning: unused variable 'j' [-Wunused-variable]
+  uint32_t j = 0;
+           ^
+Finished building: ../modules/src/tables.c
+ 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp:62:10: fatal error: tables.h: No such file or directory
+ #include <tables.h> // ?i2s
+          ^~~~~~~~~~
+compilation terminated.
+Src/subdir.mk:54: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+15:06:51 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp:69:10: fatal error: tables.h: No such file or directory
+ #include <tables.h> // ?i2s
+          ^~~~~~~~~~
+compilation terminated.
+make: *** [Src/main.o] Error 1
+Src/subdir.mk:54: recipe for target 'Src/main.o' failed
+15:13:26 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../modules/src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"modules/src/tables.d" -MT"modules/src/tables.o" -o "modules/src/tables.o" "../modules/src/tables.c"
+../modules/src/tables.c: In function 'packForCodec':
+../modules/src/tables.c:194:11: warning: unused variable 'j' [-Wunused-variable]
+  uint32_t j = 0;
+           ^
+Finished building: ../modules/src/tables.c
+ 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp:69:10: fatal error: tables.h: No such file or directory
+ #include <tables.h> // ?i2s
+          ^~~~~~~~~~
+compilation terminated.
+Src/subdir.mk:54: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+15:19:39 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp:69:10: fatal error: tables.h: No such file or directory
+ #include <tables.h> // ?i2s
+          ^~~~~~~~~~
+compilation terminated.
+Src/subdir.mk:54: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+15:20:13 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:152:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:189:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:203:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:211:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+../Src/tables.c: In function 'packForCodec':
+../Src/tables.c:194:11: warning: unused variable 'j' [-Wunused-variable]
+  uint32_t j = 0;
+           ^
+Finished building: ../Src/tables.c
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:137: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [WinProj.elf] Error 1
+makefile:51: recipe for target 'WinProj.elf' failed
+15:20:35 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:152:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:189:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:203:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:211:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:137: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+15:21:53 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+../Src/tables.c: In function 'packForCodec':
+../Src/tables.c:194:11: warning: unused variable 'j' [-Wunused-variable]
+  uint32_t j = 0;
+           ^
+Finished building: ../Src/tables.c
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:137: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+15:23:58 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:152:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:189:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:203:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:211:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+../Src/tables.c: In function 'packForCodec':
+../Src/tables.c:47:11: warning: unused variable 'j' [-Wunused-variable]
+  uint32_t j = 0;
+           ^
+Finished building: ../Src/tables.c
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:137: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+15:24:45 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:137:15: error: 'outBu' was not declared in this scope
+   prepareSin(&outBu[0]);
+               ^~~~~
+../Src/main.cpp:137:15: note: suggested alternative: 'outBuf'
+   prepareSin(&outBu[0]);
+               ^~~~~
+               outBuf
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:189:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:203:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:211:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+make: *** [Src/main.o] Error 1
+Src/subdir.mk:57: recipe for target 'Src/main.o' failed
+15:24:59 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:152:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:189:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:203:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:211:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:137: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+15:25:18 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:152:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:189:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:203:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:211:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+In file included from ../Src/tables.c:10:0:
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc/tables.h:19:17: error: unknown type name 'uint16_t'
+ void prepareSin(uint16_t *outBuf);
+                 ^~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc/tables.h:20:32: error: unknown type name 'uint32_t'
+ void packForCodec(float *flo_, uint32_t size_, uint16_t *outBuf_);
+                                ^~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc/tables.h:20:48: error: unknown type name 'uint16_t'
+ void packForCodec(float *flo_, uint32_t size_, uint16_t *outBuf_);
+                                                ^~~~~~~~
+../Src/tables.c:12:17: error: unknown type name 'uint16_t'
+ void prepareSin(uint16_t *outBuf) {
+                 ^~~~~~~~
+../Src/tables.c:45:31: error: unknown type name 'uint32_t'
+ void packForCodec(float *flo, uint32_t size, uint16_t *outBuf) {
+                               ^~~~~~~~
+../Src/tables.c:45:46: error: unknown type name 'uint16_t'
+ void packForCodec(float *flo, uint32_t size, uint16_t *outBuf) {
+                                              ^~~~~~~~
+make: *** [Src/tables.o] Error 1
+Src/subdir.mk:49: recipe for target 'Src/tables.o' failed
+15:25:29 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:152:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:189:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:203:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:211:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+../Src/tables.c: In function 'packForCodec':
+../Src/tables.c:47:11: warning: unused variable 'j' [-Wunused-variable]
+  uint32_t j = 0;
+           ^
+Finished building: ../Src/tables.c
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:137: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+15:26:52 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:139:32: error: 'outBuf' was not declared in this scope
+   HAL_I2S_Transmit_DMA(&hi2s2, outBuf, SIN_1000_SMP_SZ * 2); // ?i2s
+                                ^~~~~~
+../Src/main.cpp:139:32: note: suggested alternative: 'outBuff'
+   HAL_I2S_Transmit_DMA(&hi2s2, outBuf, SIN_1000_SMP_SZ * 2); // ?i2s
+                                ^~~~~~
+                                outBuff
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:189:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:203:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:211:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Src/subdir.mk:57: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+15:26:59 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:152:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:189:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:203:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:211:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+Finished building: ../Src/tables.c
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:137: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+15:27:43 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:152:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:189:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:203:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:211:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:137: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [WinProj.elf] Error 1
+makefile:51: recipe for target 'WinProj.elf' failed
+15:28:40 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:152:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:189:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:203:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:211:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+Finished building: ../Src/tables.c
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:137: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+15:29:20 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:153:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:190:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:204:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:212:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+Finished building: ../Src/tables.c
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:138: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+15:29:47 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:153:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:190:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:204:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:212:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:138: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [WinProj.elf] Error 1
+makefile:51: recipe for target 'WinProj.elf' failed
+15:30:32 **** Clean-only build of configuration Debug for project WinProj ****
+make clean 
+rm -rf *
+ 
+15:30:35 **** Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../startup/startup_stm32f407xx.s
+Invoking: MCU GCC Assembler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32f407xx.o" "../startup/startup_stm32f407xx.s"
+Finished building: ../startup/startup_stm32f407xx.s
+ 
+Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Amp.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/Amp.d" -MT"modules/src/Amp.o" -o "modules/src/Amp.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Amp.cpp"
+Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Amp.cpp
+ 
+Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/CodecDriver.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/CodecDriver.d" -MT"modules/src/CodecDriver.o" -o "modules/src/CodecDriver.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/CodecDriver.cpp"
+Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/CodecDriver.cpp
+ 
+Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generator.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/Generator.d" -MT"modules/src/Generator.o" -o "modules/src/Generator.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generator.cpp"
+Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generator.cpp
+ 
+Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generic.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/Generic.d" -MT"modules/src/Generic.o" -o "modules/src/Generic.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generic.cpp"
+Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Generic.cpp
+ 
+Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Module.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/Module.d" -MT"modules/src/Module.o" -o "modules/src/Module.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Module.cpp"
+Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Module.cpp
+ 
+Building file: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"modules/src/Wire.d" -MT"modules/src/Wire.o" -o "modules/src/Wire.o" "D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp"
+In file included from D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:8:0:
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp: In constructor 'Wire::Wire(Module&, Module&, Parameter::ParamName)':
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:32:10: warning: 'Wire::source' will be initialized after [-Wreorder]
+  Module *source;                    // source module (provider)
+          ^~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:31:10: warning:   'Module* Wire::destination' [-Wreorder]
+  Module *destination;               // destination module (consumer)
+          ^~~~~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:10:1: warning:   when initialized here [-Wreorder]
+ Wire::Wire(Module& src_, Module& dst_, Parameter::ParamName param_) :
+ ^~~~
+In file included from D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:8:0:
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:31:10: warning: 'Wire::destination' will be initialized after [-Wreorder]
+  Module *destination;               // destination module (consumer)
+          ^~~~~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc/Wire.hpp:28:11: warning:   'uint32_t Wire::paramSocket' [-Wreorder]
+  uint32_t paramSocket;              // wire is connected to this parameter's socket
+           ^~~~~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:10:1: warning:   when initialized here [-Wreorder]
+ Wire::Wire(Module& src_, Module& dst_, Parameter::ParamName param_) :
+ ^~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp: In member function 'void Wire::replugProvider(Module&)':
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:84:9: warning: enumeration value 'NOT_INITIALIZED' not handled in switch [-Wswitch]
+  switch (destination->getModuleType()) {       // depending on the destination module type, connect new source's outBuf to destination's parameter's socket
+         ^
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:84:9: warning: enumeration value 'AMPLIFIER' not handled in switch [-Wswitch]
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp: In member function 'void Wire::plug(Parameter::ParamName)':
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:94:9: warning: enumeration value 'NOT_INITIALIZED' not handled in switch [-Wswitch]
+  switch (destination->getModuleType()) {
+         ^
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp:94:9: warning: enumeration value 'AMPLIFIER' not handled in switch [-Wswitch]
+Finished building: D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/src/Wire.cpp
+ 
+Building file: ../Src/dma.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/dma.d" -MT"Src/dma.o" -o "Src/dma.o" "../Src/dma.c"
+Finished building: ../Src/dma.c
+ 
+Building file: ../Src/gpio.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" -o "Src/gpio.o" "../Src/gpio.c"
+Finished building: ../Src/gpio.c
+ 
+Building file: ../Src/i2c.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/i2c.d" -MT"Src/i2c.o" -o "Src/i2c.o" "../Src/i2c.c"
+Finished building: ../Src/i2c.c
+ 
+Building file: ../Src/i2s.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/i2s.d" -MT"Src/i2s.o" -o "Src/i2s.o" "../Src/i2s.c"
+Finished building: ../Src/i2s.c
+ 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:153:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:190:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:204:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:212:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building file: ../Src/stm32f4xx_hal_msp.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" -o "Src/stm32f4xx_hal_msp.o" "../Src/stm32f4xx_hal_msp.c"
+Finished building: ../Src/stm32f4xx_hal_msp.c
+ 
+Building file: ../Src/stm32f4xx_it.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" -o "Src/stm32f4xx_it.o" "../Src/stm32f4xx_it.c"
+Finished building: ../Src/stm32f4xx_it.c
+ 
+Building file: ../Src/system_stm32f4xx.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" -o "Src/system_stm32f4xx.o" "../Src/system_stm32f4xx.c"
+Finished building: ../Src/system_stm32f4xx.c
+ 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+Finished building: ../Src/tables.c
+ 
+Building file: ../Src/tim.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" -o "Src/tim.o" "../Src/tim.c"
+Finished building: ../Src/tim.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:138: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+15:31:59 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:177:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:162: undefined reference to `packForCodec(float*, unsigned long, unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+15:32:37 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:177:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+In file included from ../Src/tables.c:10:0:
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc/tables.h:19:17: error: unknown type name 'uint16_t'
+ void prepareSin(uint16_t *outBuf);
+                 ^~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc/tables.h:20:32: error: unknown type name 'uint32_t'
+ void packForCodec(float *flo_, uint32_t size_, uint16_t *outBuf_);
+                                ^~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc/tables.h:20:48: error: unknown type name 'uint16_t'
+ void packForCodec(float *flo_, uint32_t size_, uint16_t *outBuf_);
+                                                ^~~~~~~~
+../Src/tables.c:12:17: error: unknown type name 'uint16_t'
+ void prepareSin(uint16_t *outBuf) {
+                 ^~~~~~~~
+../Src/tables.c:45:31: error: unknown type name 'uint32_t'
+ void packForCodec(float *flo, uint32_t size, uint16_t *outBuf) {
+                               ^~~~~~~~
+../Src/tables.c:45:46: error: unknown type name 'uint16_t'
+ void packForCodec(float *flo, uint32_t size, uint16_t *outBuf) {
+                                              ^~~~~~~~
+Src/subdir.mk:49: recipe for target 'Src/tables.o' failed
+make: *** [Src/tables.o] Error 1
+17:30:24 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+In file included from ../Src/tables.c:10:0:
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc/tables.h:19:17: error: unknown type name 'uint16_t'
+ void prepareSin(uint16_t *outBuf);
+                 ^~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc/tables.h:20:32: error: unknown type name 'uint32_t'
+ void packForCodec(float *flo_, uint32_t size_, uint16_t *outBuf_);
+                                ^~~~~~~~
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc/tables.h:20:48: error: unknown type name 'uint16_t'
+ void packForCodec(float *flo_, uint32_t size_, uint16_t *outBuf_);
+                                                ^~~~~~~~
+../Src/tables.c:12:17: error: unknown type name 'uint16_t'
+ void prepareSin(uint16_t *outBuf) {
+                 ^~~~~~~~
+../Src/tables.c:45:31: error: unknown type name 'uint32_t'
+ void packForCodec(float *flo, uint32_t size, uint16_t *outBuf) {
+                               ^~~~~~~~
+../Src/tables.c:45:46: error: unknown type name 'uint16_t'
+ void packForCodec(float *flo, uint32_t size, uint16_t *outBuf) {
+                                              ^~~~~~~~
+Src/subdir.mk:49: recipe for target 'Src/tables.o' failed
+make: *** [Src/tables.o] Error 1
+17:31:44 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:177:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+Finished building: ../Src/tables.c
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:162: undefined reference to `packForCodec(float*, unsigned long, unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+17:34:18 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:177:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:162: undefined reference to `packForCodec(float*, unsigned long, unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+17:37:42 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:177:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+Finished building: ../Src/tables.c
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:162: undefined reference to `packForCodec(float*, unsigned long, unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [WinProj.elf] Error 1
+makefile:51: recipe for target 'WinProj.elf' failed
+17:38:55 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:177:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:138: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [WinProj.elf] Error 1
+makefile:51: recipe for target 'WinProj.elf' failed
+17:41:05 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:178:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:215:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:229:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:237:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:139: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+17:41:31 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:178:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:215:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:229:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:237:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:139:13: warning: 'a' is used uninitialized in this function [-Wuninitialized]
+   prepareSin(a);
+   ~~~~~~~~~~^~~
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:139: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [WinProj.elf] Error 1
+makefile:51: recipe for target 'WinProj.elf' failed
+17:41:51 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:139:15: error: cannot convert 'uint32_t* {aka long unsigned int*}' to 'uint16_t* {aka short unsigned int*}' for argument '1' to 'void prepareSin(uint16_t*)'
+   prepareSin(a);
+               ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:215:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:229:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:237:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+make: *** [Src/main.o] Error 1
+Src/subdir.mk:57: recipe for target 'Src/main.o' failed
+17:42:36 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:178:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:215:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:229:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:237:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:139:13: warning: 'a' is used uninitialized in this function [-Wuninitialized]
+   prepareSin(a);
+   ~~~~~~~~~~^~~
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:139: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+17:49:44 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:160:85: error: too few arguments to function 'void packForCodec(float*, uint32_t, uint16_t*)'
+   uint16_t outBuff[SIN_1000_SMP_SZ * 2] = packForCodec(sin_1000_smp, SIN_1000_SMP_SZ);
+                                                                                     ^
+In file included from ../Src/main.cpp:69:0:
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc/tables.h:20:6: note: declared here
+ void packForCodec(float *flo, uint32_t size, uint16_t *outBuf);
+      ^~~~~~~~~~~~
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Src/subdir.mk:57: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+17:50:04 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:160:85: error: too few arguments to function 'void packForCodec(float*, uint32_t, uint16_t*)'
+   uint16_t outBuff[SIN_1000_SMP_SZ * 2] = packForCodec(sin_1000_smp, SIN_1000_SMP_SZ);
+                                                                                     ^
+In file included from ../Src/main.cpp:69:0:
+D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc/tables.h:20:6: note: declared here
+ void packForCodec(float *flo, uint32_t size, uint16_t *outBuf);
+      ^~~~~~~~~~~~
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Src/subdir.mk:57: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+17:50:39 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:160:55: error: array must be initialized with a brace-enclosed initializer
+   uint16_t outBuff[SIN_1000_SMP_SZ * 2] = packForCodec(sin_1000_smp, SIN_1000_SMP_SZ);
+                                           ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Src/subdir.mk:57: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+17:56:01 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:138:22: error: cannot convert 'uint16_t (*)[200] {aka short unsigned int (*)[200]}' to 'uint16_t* {aka short unsigned int*}' for argument '1' to 'void prepareSin(uint16_t*)'
+   prepareSin(&outBuff);
+                      ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Src/subdir.mk:57: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+17:56:19 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:138:22: error: cannot convert 'uint16_t (*)[200] {aka short unsigned int (*)[200]}' to 'uint16_t** {aka short unsigned int**}' for argument '1' to 'void prepareSin(uint16_t**)'
+   prepareSin(&outBuff);
+                      ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Src/subdir.mk:57: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+17:57:44 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:177:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+Finished building: ../Src/tables.c
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:138: undefined reference to `prepareSin(unsigned short**)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+17:59:10 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:138:22: error: cannot convert 'uint16_t (*)[200] {aka short unsigned int (*)[200]}' to 'uint16_t** {aka short unsigned int**}' for argument '1' to 'void prepareSin(uint16_t**)'
+   prepareSin(&outBuff);
+                      ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Src/subdir.mk:57: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+18:01:15 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:177:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:138: undefined reference to `prepareSin(unsigned short**)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [WinProj.elf] Error 1
+makefile:51: recipe for target 'WinProj.elf' failed
+18:02:00 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:138:22: error: cannot convert 'uint16_t (*)[200] {aka short unsigned int (*)[200]}' to 'uint16_t** {aka short unsigned int**}' for argument '1' to 'void prepareSin(uint16_t**)'
+   prepareSin(&outBuff);
+                      ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Src/subdir.mk:57: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+18:02:48 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:138:22: error: cannot convert 'uint16_t (*)[200] {aka short unsigned int (*)[200]}' to 'uint16_t** {aka short unsigned int**}' for argument '1' to 'void prepareSin(uint16_t**)'
+   prepareSin(&outBuff);
+                      ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Src/subdir.mk:57: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+18:04:01 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:138:22: error: cannot convert 'uint16_t (*)[200] {aka short unsigned int (*)[200]}' to 'uint16_t** {aka short unsigned int**}' for argument '1' to 'void prepareSin(uint16_t**)'
+   prepareSin(&outBuff);
+                      ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Src/subdir.mk:57: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+18:06:23 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:177:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:214:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:228:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:236:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+../Src/tables.c: In function 'packForCodec':
+../Src/tables.c:49:3: error: invalid type argument of unary '*' (have 'int')
+   *(outBuf)[i] =   (temp) >> 16;     // High 16 bits
+   ^~~~~~~~~~~~
+../Src/tables.c:50:3: error: invalid type argument of unary '*' (have 'int')
+   *(outBuf)[i+1] = (temp) & 0xFFFF;  // Low  16 bits
+   ^~~~~~~~~~~~~~
+Src/subdir.mk:49: recipe for target 'Src/tables.o' failed
+make: *** [Src/tables.o] Error 1
+18:06:44 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/tables.c
+Invoking: MCU GCC Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tables.d" -MT"Src/tables.o" -o "Src/tables.o" "../Src/tables.c"
+Finished building: ../Src/tables.c
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug/../Src/main.cpp:138: undefined reference to `prepareSin(unsigned short*)'
+collect2.exe: error: ld returned 1 exit status
+makefile:51: recipe for target 'WinProj.elf' failed
+make: *** [WinProj.elf] Error 1
+18:08:55 **** Incremental Build of configuration Debug for project WinProj ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+D:\YandexDisk\Stud\Prog\Synth\Synth_repo\Code\WinProj\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WinProj/Drivers/CMSIS/Include" -I"D:/YandexDisk/Stud/Prog/Synth/Synth_repo/Code/WeirdProj/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+../Src/main.cpp: In function 'int main()':
+../Src/main.cpp:154:21: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+    volatile uint8_t o = (SPI2->DR);
+                     ^
+../Src/main.cpp: In function 'void SystemClock_Config()':
+../Src/main.cpp:191:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:205:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+../Src/main.cpp:213:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+     _Error_Handler(__FILE__, __LINE__);
+                                      ^
+Finished building: ../Src/main.cpp
+ 
+Building target: WinProj.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -o "WinProj.elf" @"objects.list"   -lm
+Finished building target: WinProj.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "WinProj.elf" "WinProj.hex"
+arm-none-eabi-size "WinProj.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13240	    124	   1916	  15280	   3bb0	WinProj.elf
+ 
