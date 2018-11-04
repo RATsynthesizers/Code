@@ -46,9 +46,17 @@ void Sequencer::advanceStep(void) {
 
 }
 
-void Sequencer::start(void) {
+void Sequencer::continueSeq(void) {
 	while(1) {         // ?? stuupid
 		Sequencer::advanceStep();
 		triggerStep(sequence[currStep]);
 	}
+}
+
+void Sequencer::pauseSeq(void) {
+
+}
+
+void Sequencer::resetSeq(void) {
+	currStep = 0;
 }
