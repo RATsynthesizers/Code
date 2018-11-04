@@ -16,22 +16,25 @@ using namespace MIDI;
 
 extern u32 millis;         // for time measurements
 
-enum class SeqOptions {
+enum SeqOptions {
 	SIZE = 8
 };
 
-enum SeqStepAction {
-		ADVANCE,
-		SKIP,
-		REPEAT,
-		JUMP
+enum SeqStepAction {  // action bit mask
+		//ADVANCE = 0x1,
+		SKIP = 0x2,        // -> advance
+		REPEAT = 0x4,      // -> trig
+		MUTE = 0x8,        // -> trig
+		MUTE_REPEAT = 0x10,// -> trig
+		JUMP = 0x20        // -> advance
 	};
 
 struct SeqStep {
-	MIDImessage note;   // midi to send
-	u32 length;         // in ms
-	u8 repeats;         // how many repeats
-	u16 jumpTo;         // jump to this step
+	MIDImessage note;     // midi to send
+	u32 length;           // in ms
+	u8 action;            // what to do
+	u8 repeats;           // how many repeats
+	u16 jumpTo;           // jump to this step
 };
 
 class Sequencer {
