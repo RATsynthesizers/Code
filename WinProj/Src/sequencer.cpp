@@ -10,7 +10,7 @@
 Sequencer::Sequencer() : seqLength(SeqOptions::SIZE), currStep(0), prevTime(0) { };
 
 void triggerStep(SeqStep step) {  // TODO: think about timing
-	if (step.repeats)
+	if (step.repeats)   // ?? same behavior for repeats = 0 and repeats = 1
 		for(u8 i = 0; i < step.repeats; i++) {
 			SendNoteOn( &(step.note) );
 			HAL_Delay(step.length);       // ?? stupid
