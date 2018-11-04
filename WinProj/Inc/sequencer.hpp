@@ -41,9 +41,9 @@ public:
 	Sequencer();
 	void triggerStep(SeqStep step);
 	void advanceStep(void);
-	void start(void);
-	void pause(void);
-	void stop(void);
+	void continueSeq(void);
+	void pauseSeq(void);
+	void resetSeq(void);
 	u16 seqLength;                       // [1..SeqOptions::SIZE]
 	SeqStep sequence[SeqOptions::SIZE];  // the greatest sequence ever)
 
