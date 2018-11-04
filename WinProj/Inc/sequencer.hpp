@@ -23,7 +23,7 @@ enum SeqOptions {
 enum SeqStepAction {  // action bit mask
 		//ADVANCE = 0x1,
 		SKIP = 0x2,        // -> on advance
-		//REPEAT = 0x4,      // -> on trig  ?? no need when we can check if repeats==1 or >1
+		//REPEAT = 0x4,    // -> on trig  ?? no need when we can check if repeats==1 or >1
 		MUTE = 0x8,        // -> on trig
 		JUMP = 0x20        // -> on advance
 	};
