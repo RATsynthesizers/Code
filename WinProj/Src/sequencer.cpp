@@ -21,7 +21,7 @@ void triggerStep(SeqStep step) {  // TODO: think about timing, initialise all st
 				HAL_Delay(step.length);                          // stupid monophonic
 			}
 		}
-//	else                           // or play once ()
+//	else                           // or play once
 //		SendNoteOn( &(step.note) );
 //		HAL_Delay(step.length);       // ?? stupid
 //		SendNoteOff( &(step.note) );  // noteOff with same velocity
