@@ -1,0 +1,21 @@
+/*
+ * sequencer.h
+ *
+ *  Created on: Nov 4, 2018
+ *      Author: Roman
+ */
+
+#ifndef SEQUENCER_HPP_
+#define SEQUENCER_HPP_
+
+
+#include <Globals.hpp>
+#include "MIDIparser.hpp"
+
+using namespace MIDI;
+
+extern u32 millis;         // for time masurements
+MIDImessage sequence[16];  // the greatest sequence ever)
+
+
+#endif /* SEQUENCER_HPP_ */

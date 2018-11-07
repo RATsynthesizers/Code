@@ -1,0 +1,6 @@
+17:40:22 **** Incremental Build of configuration Debug for project kek ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+
+17:40:24 Build Finished (took 1s.836ms)
+

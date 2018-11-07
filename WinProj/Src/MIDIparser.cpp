@@ -160,3 +160,29 @@ void MIDIparser::PushByte(uint8_t byte) {
 	    }
 	  }
 };
+
+// will we need this?
+//void SendNoteOn(MIDImessage* msg) {
+//	uint8_t tmp[3] = {NOTE_ON, msg->key, msg->velocity};
+//	HAL_UART_Transmit_IT(&huart4, tmp, 3);
+//}
+
+// maybe just send message?
+//void SendMeassage(MIDImessage* msg) {
+//	uint8_t tmp[3] = {msg->command, msg->key, msg->velocity};
+//	HAL_UART_Transmit_IT(&huart4, tmp, 3);  // tmp is a local buffer, ok?
+//}
+
+
+void SendNoteOn(u8 key, u8 vel) {
+	uint8_t tmp[3] = {NOTE_ON, key, vel};
+	HAL_UART_Transmit_IT(&huart4, tmp, 3);  // tmp is a local buffer, ok?
+}
+
+void SendNoteOff(u8 key, u8 vel) {
+	uint8_t tmp[3] = {NOTE_OFF, key, vel};
+	HAL_UART_Transmit_IT(&huart4, tmp, 3);
+}
+
+
+

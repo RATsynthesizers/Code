@@ -11,6 +11,9 @@
 #include "stm32f4xx.h"
 #include "DWT.h"       // for speed measurements
 
+using u8 = uint8_t;
+using u16 = uint16_t;
+using u32 = uint32_t;
 using u32_ptr = uint32_t*;
 using c_u32_ptr = const uint32_t*;
 

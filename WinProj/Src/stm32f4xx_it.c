@@ -38,6 +38,8 @@
 /* USER CODE BEGIN 0 */
 //extern uint16_t buf[3];   // ?i2s
 extern uint8_t tempBufUART;
+
+extern uint32_t millis;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
@@ -185,7 +187,7 @@ void SysTick_Handler(void)
   HAL_IncTick();
   HAL_SYSTICK_IRQHandler();
   /* USER CODE BEGIN SysTick_IRQn 1 */
-
+  millis++;
   /* USER CODE END SysTick_IRQn 1 */
 }
 
@@ -250,7 +252,7 @@ void UART4_IRQHandler(void)
   /* USER CODE END UART4_IRQn 0 */
   HAL_UART_IRQHandler(&huart4);
   /* USER CODE BEGIN UART4_IRQn 1 */
-  HAL_UART_Receive_IT(&huart4, &tempBufUART, 1);
+  HAL_UART_Receive_IT(&huart4, &tempBufUART, 1);  // only here
   /* USER CODE END UART4_IRQn 1 */
 }
 
