@@ -12,6 +12,8 @@
 #include "stm32f4xx_hal.h" // for UART funcs
 #include <Globals.hpp>
 
+extern u8 buf[3];  // ??
+
 extern UART_HandleTypeDef huart4;
 
 namespace MIDI {
@@ -42,7 +44,7 @@ namespace MIDI {
 		uint8_t parameter1;
 		uint8_t parameter2;
 
-	public:
+	public:   // shortcut names for parameter1 and parameter2
 		uint8_t command;
 		uint8_t& key = parameter1;
 		uint8_t& controller = parameter1;

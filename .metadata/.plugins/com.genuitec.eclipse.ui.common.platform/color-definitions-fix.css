@@ -1013,17 +1013,6 @@ IEclipsePreferences#eclihx-ui {
 		'hx_editor_brace_color=216,216,216'
 		'hx_editor_multiline_comment_color=199,221,12'
 }
-IEclipsePreferences#goclipse {
-	preferences:
-		'syntax_highlighting_primitive_color=127,179,71'
-		'syntax_highlighting_multiline_string_color=255,198,0'
-		'syntax_highlighting_comment_color=199,221,12'
-		'syntax_highlighting_text_color=216,216,216'
-		'syntax_highlighting_keyword_color=141,203,226'
-		'syntax_highlighting_string_color=255,198,0'
-		'syntax_highlighting_value_color=127,179,71'
-		'syntax_highlighting_builtin_function_color=255,255,255'
-}
 IEclipsePreferences#jp-gr-java_conf-ussiy-app-propedit {
 	preferences:
 		'separatorColor=216,216,216'
@@ -2150,6 +2139,7 @@ IEclipsePreferences#org-eclipse-ui-workbench {
 		'org.eclipse.egit.ui.DiffRemoveBackgroundColor=97,45,45'
 		'org.eclipse.egit.ui.DiffRemoveForegroundColor=238,240,241'
 		'org.eclipse.egit.ui.IgnoredResourceForegroundColor=157,167,175'
+		'org.eclipse.egit.ui.UncommittedChangeBackgroundColor=25,29,31'
 		'org.eclipse.egit.ui.UncommittedChangeForegroundColor=216,220,223'
 		'org.eclipse.mylyn.tasks.ui.colors.category.gradient.end=28,31,34'
 		'org.eclipse.mylyn.tasks.ui.colors.category.gradient.start=11,13,14'

@@ -1,6 +1,6 @@
-22:23:10 **** Incremental Build of configuration Debug for project WinProj ****
+21:46:39 **** Incremental Build of configuration Debug for project WinProj ****
 make all 
 make: Nothing to be done for 'all'.
 
-22:23:13 Build Finished (took 2s.429ms)
+21:46:42 Build Finished (took 2s.631ms)
 

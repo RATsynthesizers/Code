@@ -1,0 +1,1 @@
+#define __FPU_USED            1         - in main.h

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="__FPU_USED" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
+	<item value="../DSP_Lib/Include" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
 	<item value="Default C++ source template" key="LastUsedSourceTemplate"/>
 	<item value="Default C++ header template" key="LastUsedHeaderTemplate"/>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
@@ -13,6 +13,9 @@
 		<item value="false" key="caseSensitive"/>
 		<item value="227191" key="searchFlags"/>
 		<list key="previousPatterns">
+			<item value="codec_reset"/>
+			<item value="FPU_USD"/>
+			<item value="cpacr"/>
 			<item value="__FPU_PRESENT"/>
 			<item value="__FPU_USED"/>
 			<item value="_FPU_USED"/>

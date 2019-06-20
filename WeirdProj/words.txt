@@ -65,9 +65,25 @@ git checkout <branch name>   - switch to another branch
   > после всех коммитов можно залить изменения на репу командой 
     git push cod master (или в другую ветку)
 
+*Установка DSP-либы:
+  > Инструкция находится в User\STM32Cube\Repository\STM32Cube_FW_F4_Vx.xx.1\Drivers\CMSIS\DSP\Include\arm_math.h
+  > Из папки Drivers\CMSIS\Lib\GCC копируем libarm_cortexM4lf_math.a в созданную в проекте папку ${ProjName}/DSP_Lib
+  > И прописываем к ней путь: Project->Properties->C/C++Buld->Settings->Libraries:
+  	> Libraries (-l):  "arm_cortexM4lf_math", "m"
+  	> Library Search Path (-L): "${workspace_loc:/${ProjName}/DSP_Lib}"
+  > Из папки STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\DSP копируем инклюды и сурсы в ${ProjName}/DSP_Lib
+  > Инклюдим их ДЛЯ G++ компилятора: ../DSP_Lib/Include
+  > Дефайним в препроцессоре ARM_MATH_CM4
+  > В main.h:   #define __FPU_USED  1
+
+
+
 *Фиксы: 
-  > Для Dynamic cast-ов: Project->Properties->C/C++Buld->Settings->G++ Compiler->Miscellaneous->uncheck "Disable generation of information about every class with virtual functions (-fno-rtti)";
-  > Для F4 - software reset, при багах перезагрузить вендовс;
+  > Для Dynamic cast-ов: Project->Properties->C/C++Buld->Settings->G++ Compiler->Miscellaneous->
+    ->uncheck "Disable generation of information about every class with virtual functions (-fno-rtti)"
+  > Для F4 - software reset, при багах перезагрузить вендовс
+
+
 
 
 

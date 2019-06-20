@@ -174,14 +174,20 @@ void MIDIparser::PushByte(uint8_t byte) {
 //}
 
 
-void SendNoteOn(u8 key, u8 vel) {
-	uint8_t tmp[3] = {NOTE_ON, key, vel};
-	HAL_UART_Transmit_IT(&huart4, tmp, 3);  // tmp is a local buffer, ok?
+void MIDI::SendNoteOn(u8 key, u8 vel) {
+	//uint8_t tmp[3] = {NOTE_ON, key, vel};
+	buf[0] = NOTE_ON;
+	buf[1] = key;
+	buf[2] = vel;
+	HAL_UART_Transmit_IT(&huart4, buf, 3);  // tmp is a local buffer, ok?
 }
 
-void SendNoteOff(u8 key, u8 vel) {
-	uint8_t tmp[3] = {NOTE_OFF, key, vel};
-	HAL_UART_Transmit_IT(&huart4, tmp, 3);
+void MIDI::SendNoteOff(u8 key, u8 vel) {
+	//uint8_t tmp[3] = {NOTE_OFF, key, vel};
+	buf[0] = NOTE_OFF;
+	buf[1] = key;
+	buf[2] = vel;
+	HAL_UART_Transmit_IT(&huart4, buf, 3);
 }
 
 
