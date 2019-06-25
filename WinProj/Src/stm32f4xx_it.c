@@ -323,7 +323,7 @@ void FPU_IRQHandler(void)
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 	// if I2S disabled & WS transition 0 -> 1:
 	if( ((hi2s2.Instance->I2SCFGR & SPI_I2SCFGR_I2SE) != 0) && (GPIO_Pin == CODEC_SYNC_Pin) ) {
-		__HAL_I2S_ENABLE(&hi2s2);
+		//__HAL_I2S_ENABLE(&hi2s2);
 	}
 }
 /* USER CODE END 1 */

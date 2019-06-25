@@ -43,6 +43,9 @@
 
 #include <CodecDriver.hpp>
 #include <MIDIparser.hpp>
+
+//#include "tables.h" // ?i2s
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -64,18 +67,11 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-uint8_t buf[3];    // ?i2s
+uint32_t millis = 0;
+
 uint16_t i2sbuf[100];
-uint16_t i2sbuf2[400];
 
 MIDI::MIDIparser parser;
-
-
-uint8_t bufCnt = 0;
-uint8_t tempBufUART = 0;
-#include "tables.h" // ?i2s
-
-uint32_t millis = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -93,14 +89,9 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
- if(huart->Instance==UART4)
- {
-
+ if(huart->Instance==UART4) {
 	 parser.PushByte(tempBufUART);
-
-
  }
-
 }
 /* USER CODE END 0 */
 
@@ -111,8 +102,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	for(int i = 0; i<400; i++)
-		i2sbuf2[i] = i;
+	for(int i = 0; i<100; i++)
+		i2sbuf[i] = i;
 
   /* USER CODE END 1 */
   
@@ -123,7 +114,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-//  __disable_irq();  // ??
+
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -141,36 +132,36 @@ int main(void)
   MX_TIM2_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
-	// wire reconnect example
+
+
+	//=============== wire reconnect example ================
 	Generator g1(1,440,0);
+	Generator g2(1,440,0);
 	Amp a1(1);
+	Amp a2(1);
+	// Wire a1 -> g1.amplification
 	Wire w1(a1, g1, Parameter::ParamName::AMPLIFICATION);
 
-	Amp a2(1);
-	Generator g2(1,440,0);
+	// Wire a1 -> g2.amplification
 	w1.replugConsumer(g2, Parameter::ParamName::AMPLIFICATION);
-	w1.replugProvider(a2);
 
+	// Wire a2 -> g2.amplification
+	w1.replugProvider(a2);
+	//=======================================================
+
+
+	// Disable I2S to sync it with slave with EXTI (see errata i2s syncing issue)
 	__HAL_I2S_DISABLE(&hi2s2);
+	// Codec setup:
 	CodecDriver Codec1(hi2c1, 0);
 	Codec1.initCodec();
 
 
-//  buf[0] = 0;  // ?i2s
-//  buf[1] = 0;  // ?i2s
-//  buf[2] = 0;  // ?i2s
+//  for(u8 i = 0; i <= 100; i++) {
+//	  i2sbuf[i]   = (u16)( ((arm_sin_f32( (float)(3.14*i/50.0) )) + 1) * 0x3FFF );
+//  }
 
-  for(u8 i = 0; i <= 100; i++) {
-	  i2sbuf[i]   = (u16)( ((arm_sin_f32( (float)(3.14*i/50.0) )) + 1) * 0x3FFF );
-  }
-
-
-
-
-//  __enable_irq();   // ??
-  __HAL_UART_ENABLE_IT(&huart4, UART_IT_RXNE);
-
-  HAL_I2S_Transmit_DMA(&hi2s2, i2sbuf2, 200); // ?i2s
+  HAL_I2S_Transmit_DMA(&hi2s2, i2sbuf, 100); // ?i2s
 
   /* USER CODE END 2 */
 
@@ -179,16 +170,9 @@ int main(void)
   while (1)
   {
 
+
     /* USER CODE END WHILE */
-
     /* USER CODE BEGIN 3 */
-//	  volatile uint8_t o = (SPI2->DR);
-//	  if( (SPI2->DR) ) {
-//	  	o = 0; }
-
-//	  uint16_t tmp = 0xF6;
-//	  HAL_I2S_Transmit(&hi2s2,  &tmp, 1, 1);
-//	  HAL_Delay(1);
 
 //	  for(u8 j = 30; j < 110; j++) {
 //		  MIDI::SendNoteOn(j, 100);
@@ -197,7 +181,6 @@ int main(void)
 //		  HAL_Delay(1000);
 //	  }
 
-	  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12);
   }
   /* USER CODE END 3 */
 }
