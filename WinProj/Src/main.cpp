@@ -111,7 +111,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	for(int i = 0; i<400; i++)
+		i2sbuf2[i] = i;
 
   /* USER CODE END 1 */
   
@@ -150,9 +151,8 @@ int main(void)
 	w1.replugConsumer(g2, Parameter::ParamName::AMPLIFICATION);
 	w1.replugProvider(a2);
 
+	__HAL_I2S_DISABLE(&hi2s2);
 	CodecDriver Codec1(hi2c1, 0);
-
-
 	Codec1.initCodec();
 
 
@@ -164,17 +164,13 @@ int main(void)
 	  i2sbuf[i]   = (u16)( ((arm_sin_f32( (float)(3.14*i/50.0) )) + 1) * 0x3FFF );
   }
 
-  for(u16 i = 0; i <= 396; i+=4) {
-	  i2sbuf2[i]     = i2sbuf[i/4];//(u16)( ((u32)(((arm_sin_f32(3.14*i/100.0)) + 1) * 0x7FFFFFFF)) & 0x0000FFFF );
-	  i2sbuf2[i+1]   = 0;//(u16)( ((u32)(((arm_sin_f32(3.14*i/100.0)) + 1) * 0x7FFFFFFF)) >> 16 );
-	  i2sbuf2[i+2]   = i2sbuf[i/4];
-	  i2sbuf2[i+3]   = 0;
-  }
+
+
 
 //  __enable_irq();   // ??
   __HAL_UART_ENABLE_IT(&huart4, UART_IT_RXNE);
 
-  HAL_I2S_Transmit_DMA(&hi2s2, i2sbuf2, 200); // ?i2s
+//  HAL_I2S_Transmit_DMA(&hi2s2, i2sbuf2, 200); // ?i2s
 
   /* USER CODE END 2 */
 
@@ -186,9 +182,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  volatile uint8_t o = (SPI2->DR);
-	  if( (SPI2->DR) ) {
-	  	o = 0; }
+//	  volatile uint8_t o = (SPI2->DR);
+//	  if( (SPI2->DR) ) {
+//	  	o = 0; }
 
 //	  uint16_t tmp = 0xF6;
 //	  HAL_I2S_Transmit(&hi2s2,  &tmp, 1, 1);
