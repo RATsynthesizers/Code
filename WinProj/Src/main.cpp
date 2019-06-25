@@ -20,6 +20,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
 #include "i2c.h"
 #include "i2s.h"
 #include "tim.h"
@@ -34,7 +35,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "arm_math.h"      // ?? math and FPU defines
+#include "arm_math.h"        // ?? math and FPU defines
 
 #include <Globals.hpp>       // some global parameters
 #include <Generic.hpp>       // ?? like voice
@@ -111,6 +112,34 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 
+
+  /* USER CODE END 1 */
+  
+
+  /* MCU Configuration--------------------------------------------------------*/
+
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
+
+  /* USER CODE BEGIN Init */
+//  __disable_irq();  // ??
+  /* USER CODE END Init */
+
+  /* Configure the system clock */
+  SystemClock_Config();
+
+  /* USER CODE BEGIN SysInit */
+
+  /* USER CODE END SysInit */
+
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_DMA_Init();
+  MX_I2C1_Init();
+  MX_I2S2_Init();
+  MX_TIM2_Init();
+  MX_UART4_Init();
+  /* USER CODE BEGIN 2 */
 	// wire reconnect example
 	Generator g1(1,440,0);
 	Amp a1(1);
@@ -124,34 +153,7 @@ int main(void)
 	CodecDriver Codec1(hi2c1, 0);
 
 
-
-  /* USER CODE END 1 */
-  
-
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
-
-  /* USER CODE BEGIN Init */
-  __disable_irq();  // ??
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
-  SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_I2C1_Init();
-  MX_I2S2_Init();
-  MX_TIM2_Init();
-  MX_UART4_Init();
-  /* USER CODE BEGIN 2 */
-  Codec1.initCodec();
+	Codec1.initCodec();
 
 
 //  buf[0] = 0;  // ?i2s
@@ -169,7 +171,7 @@ int main(void)
 	  i2sbuf2[i+3]   = 0;
   }
 
-  __enable_irq();   // ??
+//  __enable_irq();   // ??
   __HAL_UART_ENABLE_IT(&huart4, UART_IT_RXNE);
 
   HAL_I2S_Transmit_DMA(&hi2s2, i2sbuf2, 200); // ?i2s
@@ -187,6 +189,10 @@ int main(void)
 	  volatile uint8_t o = (SPI2->DR);
 	  if( (SPI2->DR) ) {
 	  	o = 0; }
+
+//	  uint16_t tmp = 0xF6;
+//	  HAL_I2S_Transmit(&hi2s2,  &tmp, 1, 1);
+//	  HAL_Delay(1);
 
 //	  for(u8 j = 30; j < 110; j++) {
 //		  MIDI::SendNoteOn(j, 100);
