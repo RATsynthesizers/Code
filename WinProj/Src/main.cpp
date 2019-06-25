@@ -170,7 +170,7 @@ int main(void)
 //  __enable_irq();   // ??
   __HAL_UART_ENABLE_IT(&huart4, UART_IT_RXNE);
 
-//  HAL_I2S_Transmit_DMA(&hi2s2, i2sbuf2, 200); // ?i2s
+  HAL_I2S_Transmit_DMA(&hi2s2, i2sbuf2, 200); // ?i2s
 
   /* USER CODE END 2 */
 
