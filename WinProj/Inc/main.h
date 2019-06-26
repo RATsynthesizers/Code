@@ -64,8 +64,6 @@ void Error_Handler(void);
 #define CODEC_SYNC_Pin GPIO_PIN_13
 #define CODEC_SYNC_GPIO_Port GPIOB
 #define CODEC_SYNC_EXTI_IRQn EXTI15_10_IRQn
-#define what_Pin GPIO_PIN_12
-#define what_GPIO_Port GPIOD
 #define CODEC_RESET_Pin GPIO_PIN_15
 #define CODEC_RESET_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */

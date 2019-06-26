@@ -52,7 +52,8 @@
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-//extern uint16_t buf[3];   // ?i2s
+
+
 extern uint8_t tempBufUART;
 
 extern uint32_t millis;
@@ -61,7 +62,6 @@ extern uint32_t millis;
 /* External variables --------------------------------------------------------*/
 extern I2C_HandleTypeDef hi2c1;
 extern DMA_HandleTypeDef hdma_i2s2_ext_rx;
-extern DMA_HandleTypeDef hdma_spi2_tx;
 extern I2S_HandleTypeDef hi2s2;
 extern TIM_HandleTypeDef htim2;
 extern UART_HandleTypeDef huart4;
@@ -220,20 +220,6 @@ void DMA1_Stream3_IRQHandler(void)
 }
 
 /**
-  * @brief This function handles DMA1 stream4 global interrupt.
-  */
-void DMA1_Stream4_IRQHandler(void)
-{
-  /* USER CODE BEGIN DMA1_Stream4_IRQn 0 */
-
-  /* USER CODE END DMA1_Stream4_IRQn 0 */
-  HAL_DMA_IRQHandler(&hdma_spi2_tx);
-  /* USER CODE BEGIN DMA1_Stream4_IRQn 1 */
-
-  /* USER CODE END DMA1_Stream4_IRQn 1 */
-}
-
-/**
   * @brief This function handles TIM2 global interrupt.
   */
 void TIM2_IRQHandler(void)
@@ -322,9 +308,9 @@ void FPU_IRQHandler(void)
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 	// if I2S disabled & WS transition 0 -> 1:
-	if( ((hi2s2.Instance->I2SCFGR & SPI_I2SCFGR_I2SE) != 0) && (GPIO_Pin == CODEC_SYNC_Pin) ) {
-		//__HAL_I2S_ENABLE(&hi2s2);
-	}
+	if( ((hi2s2.Instance->I2SCFGR & SPI_I2SCFGR_I2SE) != 0) && (GPIO_Pin == CODEC_SYNC_Pin) && (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_12)) ) {
+		__HAL_I2S_ENABLE(&hi2s2);
+	} // TODO: disable WS interrupt
 }
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

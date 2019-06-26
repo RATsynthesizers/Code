@@ -69,9 +69,12 @@
 /* Private variables ---------------------------------------------------------*/
 uint32_t millis = 0;
 
-uint16_t i2sbuf[100];
+uint16_t i2sbufTX[100]; // ??
+uint16_t i2sbufRX[100];
 
 MIDI::MIDIparser parser;
+
+uint8_t tempBufUART  = 0; // ?? midi temp
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -102,8 +105,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	for(int i = 0; i<100; i++)
-		i2sbuf[i] = i;
+
 
   /* USER CODE END 1 */
   
@@ -156,12 +158,17 @@ int main(void)
 	CodecDriver Codec1(hi2c1, 0);
 	Codec1.initCodec();
 
+	for(int i = 0; i< 100; i++)
+		i2sbufTX[i] = i;
+
+	//HAL_I2SEx_TransmitReceive_DMA(&hi2s2, i2sbufTX, i2sbufRX, 100);
 
 //  for(u8 i = 0; i <= 100; i++) {
-//	  i2sbuf[i]   = (u16)( ((arm_sin_f32( (float)(3.14*i/50.0) )) + 1) * 0x3FFF );
+//	  i2sbufTX[i]   = (u16)( ((arm_sin_f32( (float)(3.14*i/50.0) )) + 1) * 0x3FFF );
 //  }
 
-  HAL_I2S_Transmit_DMA(&hi2s2, i2sbuf, 100); // ?i2s
+
+
 
   /* USER CODE END 2 */
 
@@ -172,6 +179,7 @@ int main(void)
 
 
     /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
 
 //	  for(u8 j = 30; j < 110; j++) {
@@ -180,7 +188,7 @@ int main(void)
 //		  MIDI::SendNoteOff(j, 100);
 //		  HAL_Delay(1000);
 //	  }
-
+	  HAL_I2S_Transmit(&hi2s2, i2sbufTX, 100, 1); // ?i2s
   }
   /* USER CODE END 3 */
 }
@@ -236,7 +244,10 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_I2SEx_TxRxCpltCallback(I2S_HandleTypeDef *hi2s) {
+	if(hi2s == &hi2s2)
+		while(1);
+}
 /* USER CODE END 4 */
 
 /**
