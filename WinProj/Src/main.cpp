@@ -151,15 +151,15 @@ int main(void)
 	w1.replugProvider(a2);
 	//=======================================================
 
-
+	for(int i = 0; i< 100; i++)
+		i2sbufTX[i] = i;
 	// Disable I2S to sync it with slave with EXTI (see errata i2s syncing issue)
 	__HAL_I2S_DISABLE(&hi2s2);
 	// Codec setup:
 	CodecDriver Codec1(hi2c1, 0);
 	Codec1.initCodec();
 
-	for(int i = 0; i< 100; i++)
-		i2sbufTX[i] = i;
+
 
 	//HAL_I2SEx_TransmitReceive_DMA(&hi2s2, i2sbufTX, i2sbufRX, 100);
 
@@ -201,7 +201,6 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
 
   /** Configure the main internal regulator output voltage 
   */
@@ -231,13 +230,6 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_I2S;
-  PeriphClkInitStruct.PLLI2S.PLLI2SN = 192;
-  PeriphClkInitStruct.PLLI2S.PLLI2SR = 2;
-  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
   {
     Error_Handler();
   }

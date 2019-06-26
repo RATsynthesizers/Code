@@ -61,7 +61,7 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define CODEC_SYNC_Pin GPIO_PIN_13
+#define CODEC_SYNC_Pin GPIO_PIN_14
 #define CODEC_SYNC_GPIO_Port GPIOB
 #define CODEC_SYNC_EXTI_IRQn EXTI15_10_IRQn
 #define CODEC_RESET_Pin GPIO_PIN_15

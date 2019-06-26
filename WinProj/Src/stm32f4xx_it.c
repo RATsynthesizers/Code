@@ -271,7 +271,7 @@ void EXTI15_10_IRQHandler(void)
   /* USER CODE BEGIN EXTI15_10_IRQn 0 */
 
   /* USER CODE END EXTI15_10_IRQn 0 */
-  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_13);
+  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_14);
   /* USER CODE BEGIN EXTI15_10_IRQn 1 */
 
   /* USER CODE END EXTI15_10_IRQn 1 */
@@ -308,7 +308,7 @@ void FPU_IRQHandler(void)
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 	// if I2S disabled & WS transition 0 -> 1:
-	if( ((hi2s2.Instance->I2SCFGR & SPI_I2SCFGR_I2SE) != 0) && (GPIO_Pin == CODEC_SYNC_Pin) && (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_12)) ) {
+	if( ((hi2s2.Instance->I2SCFGR & SPI_I2SCFGR_I2SE) != 0) && (GPIO_Pin == CODEC_SYNC_Pin) ) {
 		__HAL_I2S_ENABLE(&hi2s2);
 	} // TODO: disable WS interrupt
 }
