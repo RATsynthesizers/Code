@@ -161,7 +161,7 @@ int main(void)
 
 
 
-	//HAL_I2SEx_TransmitReceive_DMA(&hi2s2, i2sbufTX, i2sbufRX, 100);
+	HAL_I2SEx_TransmitReceive_DMA(&hi2s2, i2sbufTX, i2sbufRX, 100);
 
 //  for(u8 i = 0; i <= 100; i++) {
 //	  i2sbufTX[i]   = (u16)( ((arm_sin_f32( (float)(3.14*i/50.0) )) + 1) * 0x3FFF );
@@ -188,7 +188,7 @@ int main(void)
 //		  MIDI::SendNoteOff(j, 100);
 //		  HAL_Delay(1000);
 //	  }
-	  HAL_I2S_Transmit(&hi2s2, i2sbufTX, 100, 1); // ?i2s
+	  //HAL_I2S_Transmit(&hi2s2, i2sbufTX, 100, 1); // ?i2s
   }
   /* USER CODE END 3 */
 }
